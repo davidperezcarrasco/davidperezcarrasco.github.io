@@ -4,8 +4,8 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: David
-middle_name: 
-last_name: "Pérez Carrasco"
+middle_name: "Pérez"
+last_name: Carrasco
 email: davidperezzcarrasco@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -67,11 +67,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: "davidperezcarrasco"
+github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: "davidperezcarrasco"
+linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
