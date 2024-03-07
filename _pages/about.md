@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>.
+subtitle: <a href='#'>Member of the AI & ML Research Group at Universitat Pompeu Fabra. Exchange student at University of British Columbia</a>.
 
 profile:
   align: right
