@@ -6,7 +6,7 @@ subtitle: <a href='#'>Member of the AI & ML Research Group at Universitat Pompeu
 
 profile:
   align: right
-  image: prof_pic.png
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Barcelona, Spain</p>
