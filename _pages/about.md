@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Member of the AI & ML Research Group at Universitat Pompeu Fabra. Exchange student at University of British Columbia</a>.
+//subtitle: <a href='#'>Member of the AI & ML Research Group at Universitat Pompeu Fabra. Exchange student at University of British Columbia</a>.
 
 profile:
   align: right
@@ -17,6 +17,8 @@ latest_posts: false # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+
+Member of the AI & ML Research Group at Universitat Pompeu Fabra. Exchange student at University of British Columbia
 
 I am a passionate and driven ML/AI researcher with a year of experience in the field of reinforcement learning. As an intern at the [ML/AI research group at Universitat Pompeu Fabra](https://www.upf.edu/web/ai-ml), I have contributed to the development and evaluation of novel algorithms such as Q Learning and Z Learning, applying them to challenging Minigrid environments using Markov Decision Problems and Linearly-Solvable Markov Decision Problems.
 
