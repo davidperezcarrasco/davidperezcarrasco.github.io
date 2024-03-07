@@ -18,8 +18,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a passionate and driven ML/AI researcher with a year of experience in the field of reinforcement learning. As an intern at the [ML/AI research group at Universitat Pompeu Fabra](https://www.upf.edu/web/ai-ml), I have contributed to the development and evaluation of novel algorithms such as Q Learning and Z Learning, applying them to challenging Minigrid environments using Markov Decision Problems and Linearly-solvable Markov Decision Problems.
+I am a passionate and driven ML/AI researcher with a year of experience in the field of reinforcement learning. As an intern at the [ML/AI research group at Universitat Pompeu Fabra](https://www.upf.edu/web/ai-ml), I have contributed to the development and evaluation of novel algorithms such as Q Learning and Z Learning, applying them to challenging Minigrid environments using Markov Decision Problems and Linearly-Solvable Markov Decision Problems.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I am working on my undergraduate thesis under the guidance of [Anders Jonsson](https://www.upf.edu/web/anders-jonsson), head of the research group. My thesis focuses on improving the performance and scalability of these algorithms in larger and more complex domains. This research involves finding efficient computational methods for optimal action selection and optimizing value function approximation within linear LMDPs.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
