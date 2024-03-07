@@ -2,24 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Member of the AI & ML Research Group at Universitat Pompeu Fabra. Exchange student at University of British Columbia.</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Barcelona, Spain</p>
+    <p>davidperezzcarrasco@gmail.com</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a passionate and driven ML/AI researcher with a year of experience in the field of reinforcement learning. As an intern at the [ML/AI research group at Universitat Pompeu Fabra](https://www.upf.edu/web/ai-ml), I have contributed to the development and evaluation of novel algorithms such as Q Learning and Z Learning, applying them to challenging Minigrid environments. I have also implemented effective embeddings to transform Markov Decision Problems into Linearly Solvable Markov Decision Problems, enabling a fair and rigorous comparison of different methods. Currently, I am working on my undergraduate thesis under the guidance of [Anders Jonsson](https://www.upf.edu/web/anders-jonsson), head of the research group. My thesis focuses on improving the performance and scalability of these algorithms in larger and more complex domains. This research involves finding efficient computational methods for optimal action selection and optimizing value function approximation within linear LMDPs.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My interest in ML/AI was sparked during my exchange at the [University of British Columbia](https://www.ubc.ca/), where I took courses on Machine Learning, Artificial Intelligence, Data Science, and Statistics. I was fascinated by the potential and the challenges of this field, and I decided to pursue it further. Furthermore, my dedication to research is demonstrated by my accelerated academic progress. By completing all coursework six months ahead of schedule, I secured the opportunity to fully dedicate myself to research and remain readily available for exciting new opportunities in the ever-evolving realm of AI and ML.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
