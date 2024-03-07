@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Barcelona, Spain</p>
-    <p>123 your address street</p>
+     <p>davidperezzcarrasco@gmail.com</p>
     <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
