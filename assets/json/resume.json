@@ -53,6 +53,28 @@
         "Machine Learning",
         "Deep Learning",
         "Visual Analytics"]
+    },
+    {
+      "institution": "University of British Columbia",
+      "location": "Vancouver, Canada",
+      "url": "https://www.ubc.ca/",
+      "area": "Exchange Program",
+      "studyType": "Bachelor of Science",
+      "startDate": "2022-09-01",
+      "endDate": "2022-12-23",
+      "score": "N/A",
+      "courses": [
+        "Machine Learning & Data Mining",
+        "Artificial Intelligence",
+        "Relational Databases",
+        "Finding Relationships in Data"]
+    },
+    {
+      "institution": "Academica International Studies",
+      "location": "Miami, United States",
+      "studyType": "American High School Diploma",
+      "startDate": "2016-09-01",
+      "endDate": "2020-06-01"
     }
   ],
   "awards": [
