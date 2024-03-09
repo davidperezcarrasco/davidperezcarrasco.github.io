@@ -48,7 +48,10 @@
       "startDate": "2020-09-01",
       "endDate": "2024-06-01",
       "score": "8.63",
-      "courses": ["Optimization Techniques, Machine Learning"]
+      "courses": [
+        "Optimization Techniques",
+        "Machine Learning"
+      ]
     }
   ],
   "awards": [
