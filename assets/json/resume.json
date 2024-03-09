@@ -79,11 +79,21 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Recipient of the Honor Roll Recognition",
+      "date": "2019-06-01",
+      "awarder": "Academica International Studies",
+      "summary": "I was placed in the honor roll for my outstanding academic performance in 2018-2019 academic year."
+    },
+    {
+      "title": "Graduated with Honors",
+      "date": "2020-06-01",
+      "awarder": "Academica International Studies",
+      "summary": "American high school graduate with honors, recognized for outstanding academic achievement from 2016 to 2020."
+    },
+    {
+      "title": "Recipient of Academic Distinction for Exceptional University Entrance Exam Results.",
+      "date": "2020-08-01",
+      "awarder": "Generalitat de Catalunya"
     }
   ],
   "certificates": [
