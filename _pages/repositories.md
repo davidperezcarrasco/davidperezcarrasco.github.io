@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: My GitHub profile information and the most relevant repositories.
+title: #repositories
+description: #My GitHub profile information and the most relevant repositories.
 nav: true
 nav_order: 4
 ---
 
-## GitHub users
+## GitHub Profile
 
 {% if site.data.repositories.github_users %}
 
