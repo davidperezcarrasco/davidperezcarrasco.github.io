@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: repo_page
 permalink: /repositories/
 title: repositories
 description: #My GitHub profile information and the most relevant repositories.
