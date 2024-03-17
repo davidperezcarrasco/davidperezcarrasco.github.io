@@ -48,11 +48,16 @@
       "startDate": "2020-09-01",
       "endDate": "2024-06-01",
       "score": "8.63",
-      "courses": [
-        "Optimization Techniques",
-        "Machine Learning",
-        "Deep Learning",
-        "Visual Analytics"]
+      "honors": [
+        "Discrete Mathematics",
+        "Introduction to Programming", 
+        "Data Structures and Algorithms", 
+        "Object-Oriented Progamming", 
+        "Network Science",
+        "Algorithm Design", 
+        "Probabilistic Graphical Models",
+        "Information and Codification Theory"
+      ]
     },
     {
       "institution": "University of British Columbia",

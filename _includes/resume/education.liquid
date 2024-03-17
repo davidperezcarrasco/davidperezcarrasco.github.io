@@ -47,13 +47,16 @@
               </li>
             {% endfor %}
           </ul>
-          <ul class="items">
-            {% for item in content.honors %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+          {% if content.honors %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Honors:</h6>
+            <ul class="items">
+              {% for item in content.honors %}
+                <li>
+                  <span class="item">{{ item }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </div>
       </div>
     </li>
