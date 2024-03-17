@@ -82,12 +82,25 @@
       "endDate": "2020-06-01"
     }
   ],
+  "achievements": [
+    {
+      "title": "Finalist in the 2023 AB Data Challenge",
+      "date": "2023-12-23",
+      "awarder": "Aigües de Barcelona",
+      "summary": "Finalist in the 2023 AB Data Challenge, a competition that aims to promote the use of data science and machine learning to solve real-world problems. My team and I developed a Hierarchical Deep Learning model to detect anomalies and consumption patterns in water usage data and were selected among the top 6 finalists."
+    },
+    {
+      "title": "Contestant at the 2022 IPCP Southwestern Europe Regional Contest",
+      "date": "2022-04-23",
+      "awarder": "International Collegiate Programming Contest",
+      "summary": "Contestant at the 2022 IPCP Southwestern Europe Regional Contest, representing Universitat Pompeu Fabra and solving algorithmic problems in a 5-hour competition."
+    }
+  ],
   "awards": [
     {
-      "title": "Recipient of the Honor Roll Recognition",
-      "date": "2019-06-01",
-      "awarder": "Academica International Studies",
-      "summary": "I was placed in the honor roll for my outstanding academic performance in 2018-2019 academic year."
+      "title": "Academic Distinction for Exceptional University Entrance Exam Results.",
+      "date": "2020-08-01",
+      "awarder": "Generalitat de Catalunya"
     },
     {
       "title": "Graduated with Honors",
@@ -96,9 +109,10 @@
       "summary": "American high school graduate with honors, recognized for outstanding academic achievement from 2016 to 2020."
     },
     {
-      "title": "Academic Distinction for Exceptional University Entrance Exam Results.",
-      "date": "2020-08-01",
-      "awarder": "Generalitat de Catalunya"
+      "title": "Recipient of the Honor Roll Recognition",
+      "date": "2019-06-01",
+      "awarder": "Academica International Studies",
+      "summary": "I was placed in the honor roll for my outstanding academic performance in 2018-2019 academic year."
     }
   ],
   "skills": [
