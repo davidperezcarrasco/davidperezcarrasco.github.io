@@ -2,10 +2,9 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Some details about my projects spanning Data Science, Big Data analytics, Machine Learning, Artificial Intelligence, Deep Learning, and Reinforcement Learning research.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
 horizontal: false
 ---
 
