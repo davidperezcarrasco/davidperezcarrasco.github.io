@@ -40,13 +40,16 @@
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-weight: bold">{{ content.institution }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
-          <ul class="items">
-            {% for item in content.courses %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+          {% if content.honors %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; text-decoration: underline;">Coursework:</h6>
+            <ul class="items">
+              {% for item in content.courses %}
+                <li>
+                  <span class="item">{{ item }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
           {% if content.honors %}
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; text-decoration: underline;">Honors:</h6>
             <ul class="items">

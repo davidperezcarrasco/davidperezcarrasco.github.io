@@ -86,13 +86,13 @@
     {
       "title": "Finalist in the 2023 AB Data Challenge",
       "date": "2023-12-23",
-      "awarder": "Aigües de Barcelona",
+      "achiever": "Aigües de Barcelona",
       "summary": "Finalist in the 2023 AB Data Challenge, a competition that aims to promote the use of data science and machine learning to solve real-world problems. My team and I developed a Hierarchical Deep Learning model to detect anomalies and consumption patterns in water usage data and were selected among the top 6 finalists."
     },
     {
       "title": "Contestant at the 2022 IPCP Southwestern Europe Regional Contest",
       "date": "2022-04-23",
-      "awarder": "International Collegiate Programming Contest",
+      "achiever": "International Collegiate Programming Contest",
       "summary": "Contestant at the 2022 IPCP Southwestern Europe Regional Contest, representing Universitat Pompeu Fabra and solving algorithmic problems in a 5-hour competition."
     }
   ],
