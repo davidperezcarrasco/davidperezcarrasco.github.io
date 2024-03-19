@@ -13,8 +13,8 @@ related_publications: false
 </div>
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm mt-1 mt-md-3">
-        {% include figure.liquid path="assets/img/grid_sol.gif" alt="Optimal grid solution animation" title="Optimal grid solution animation" class="img-fluid rounded z-depth-1" style="max-width: 50%" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/grid_sol.gif" alt="Optimal grid solution animation" title="Optimal grid solution animation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
