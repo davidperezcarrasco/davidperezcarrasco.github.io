@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Novel Algorithms for Linearly Solvable Markov Decision Processes
-description: Deterministic action simulator for sequential decision-making tasks in LMDPs, enabling evaluation of state-of-the-art reinforcement learning algorithms for performance and scalability in complex domains.
+description: Reinforcement learning framework for LMDPs, enabling evaluation of state-of-the-art algorithms for performance and scalability in complex domains.
 img: assets/img/grid15.png
 importance: 1
 category: work
