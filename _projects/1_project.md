@@ -9,28 +9,7 @@ related_publications: false
 ---
 
 <div style="text-align: justify">
-    While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a novel deterministic action simulator specifically designed for sequential decision-making tasks. This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
-</div>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/grid_sol.gif" alt="Optimal grid solution animation" title="Optimal grid solution animation" class="rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Minigrid solution from Value Iteration.
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/grid_sol.gif" alt="Optimal grid solution animation" title="Optimal grid solution animation" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/minigrid_plots2.png" title="Throughput Comparison between Z Learning for a LMDP and Q Learning for an embedded MDP" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/value_function3.png" title="Optimal value function of a 4x4 Grid" class="img-fluid rounded z-depth-1" %}
-    </div>
+    While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a [novel deterministic action simulator specifically designed for sequential decision-making tasks](https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes). This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
 </div>
 
 <div style="text-align: justify">
