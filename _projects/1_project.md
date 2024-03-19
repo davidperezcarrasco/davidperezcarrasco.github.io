@@ -12,13 +12,13 @@ While working for the UPF Machine Learning & AI Research Group, I tackled the ch
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {img src="assets/img/grid_sol.gif" alt="example image" class="img-fluid rounded z-depth-1"}
+        {% include gif.liquid loading="eager" path="assets/img/mgrid_sol.gif" title="grid solution" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/minigrid_plots.png" title="throughputs" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/minigrid_plots.png" title="algorithms throughputs" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/value_function.png" title="value function" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/value_function.png" title="MDP value function" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
