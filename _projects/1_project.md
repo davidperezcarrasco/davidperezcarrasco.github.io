@@ -12,10 +12,10 @@ While working for the UPF Machine Learning & AI Research Group, I tackled the ch
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/grid_sol.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {img src="assets/img/grid_sol.gif" alt="example image" class="img-fluid rounded z-depth-1"}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/minigrid_plot.png" title="throughputs" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/minigrid_plots.png" title="throughputs" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/value_function.png" title="value function" class="img-fluid rounded z-depth-1" %}
@@ -27,10 +27,10 @@ While working for the UPF Machine Learning & AI Research Group, I tackled the ch
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/minigrid_plots.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/value_function.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
