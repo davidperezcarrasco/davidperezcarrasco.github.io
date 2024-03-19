@@ -10,9 +10,15 @@ related_publications: false
 
 While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a novel deterministic action simulator specifically designed for sequential decision-making tasks. This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
 
-<figure class="img-fluid rounded z-depth-1">
-    <img src="{{ 'assets/img/grid_sol.gif' | relative_url }}" alt="Optimal grid solution animation" title="Optimal grid solution animation">
-</figure>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img src="{{ 'assets/img/grid_sol.gif' | relative_url }}" alt="Optimal grid solution animation" title="Optimal grid solution animation">
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
