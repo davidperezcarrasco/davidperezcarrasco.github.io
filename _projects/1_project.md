@@ -5,7 +5,7 @@ description: Reinforcement learning framework for LMDPs, enabling evaluation of 
 img: assets/img/grid15.png
 importance: 1
 category: work
-github: davidperezcarrasco/https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes
+github: davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes
 related_publications: false
 ---
 
@@ -16,7 +16,7 @@ While working for the UPF Machine Learning & AI Research Group, I tackled the ch
         {% include figure.liquid path="assets/img/minigrid_plots2.png" title="Throughput Comparison between Z Learning for a LMDP and Q Learning for an embedded MDP" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/value_function2.png" title="Optimal value function of a 4x4 Grid" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/value_function3.png" title="Optimal value function of a 4x4 Grid" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
