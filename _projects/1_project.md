@@ -13,7 +13,7 @@ While working for the UPF Machine Learning & AI Research Group, I tackled the ch
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        <img src="{{ 'assets/img/grid_sol.gif' | relative_url }}" alt="Optimal grid solution animation" title="Optimal grid solution animation">
+        {% include figure.liquid path="assets/img/grid_sol.gif" alt="Optimal grid solution animation" title="Optimal grid solution animation" class="img-fluid rounded z-depth-1" style="max-width: 75%" %}
     </div>
 </div>
 <div class="caption">
