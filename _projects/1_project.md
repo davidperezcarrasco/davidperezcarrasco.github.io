@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
+title: Deterministic action simulator for sequential decision-making tasks in LMDPs, enabling evaluation of state-of-the-art reinforcement learning algorithms for performance and scalability in complex domains.
 description: a project with a background image
-img: assets/img/12.jpg
+img: assets/img/minigrid_plot.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.
