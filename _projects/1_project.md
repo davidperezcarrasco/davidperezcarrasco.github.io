@@ -8,6 +8,10 @@ category: work
 related_publications: false
 ---
 
+<div style="text-align: justify">
+    While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a novel deterministic action simulator specifically designed for sequential decision-making tasks. This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
+</div>
+
 While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a novel deterministic action simulator specifically designed for sequential decision-making tasks. This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
 
 

@@ -80,6 +80,16 @@ Here's the code for the last row of images above:
 
 {% endraw %}
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/grid_sol.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+
 My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.
 
 <div class="row justify-content-sm-center">
