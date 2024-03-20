@@ -50,10 +50,10 @@ The synergy between these components lies at the heart of the model's power.  Th
 Our project is complemented by a comprehensive web application designed for user-friendly exploration of water consumption patterns and anomalies. This intuitive interface allows visualization of multiple time series simultaneously, aiding in informed decision-making. The application offers in-depth analysis of anomalous data, including visualizations of model predictions alongside actual consumption values, highlighting anomaly points.  Furthermore, it empowers users to explore future consumption predictions and geographically visualize anomalies across different areas. By integrating socioeconomic indicators, the web application facilitates strategic decision-making for optimized water resource management.
 
 <div class="row">
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-2 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Map.png" title="LSTM consumption predictions & detected anomalies" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Prophet.jpg" title="Future Consumption predictions with Prophet" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
