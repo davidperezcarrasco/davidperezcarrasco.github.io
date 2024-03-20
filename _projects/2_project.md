@@ -8,7 +8,7 @@ category: work
 giscus_comments: false
 ---
 
-Water distribution networks in urban environments face the crucial challenge of detecting anomalies like leaks, excessive consumption, or meter errors. These anomalies often go unnoticed until significant water loss occurs. This project tackles this critical issue by presenting a novel, adaptable deep learning meta-model specifically designed for anomaly detection in water meter data.  Our model, leveraging the power of LSTMs and Transformers, effectively captures sequential consumption patterns and identifies deviations from normal behavior.  This enables early detection of anomalies, potentially leading to significant cost savings for both water companies and consumers, while promoting sustainable water usage.
+Water distribution networks in urban environments face the crucial challenge of detecting anomalies like leaks, excessive consumption, or meter errors. These anomalies often go unnoticed until significant water loss occurs. This project tackles this critical issue by presenting a novel, adaptable deep learning meta-model specifically designed for anomaly detection in water meter data.  [Our model](https://github.com/davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model), leveraging the power of LSTMs and Transformers, effectively captures sequential consumption patterns and identifies deviations from normal behavior.  This enables early detection of anomalies, potentially leading to significant cost savings for both water companies and consumers, while promoting sustainable water usage.
 
 **A Deep Learning Approach**
 
@@ -54,7 +54,7 @@ Our project is complemented by a comprehensive web application designed for user
         {% include figure.liquid loading="eager" path="assets/img/anomaly_visualization.png" title="LSTM consumption predictions & detected anomalies" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/prophet.jpg" title="Future Consumption predictions with Prophet" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Prophet.jpg" title="Future Consumption predictions with Prophet" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
