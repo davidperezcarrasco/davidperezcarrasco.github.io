@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Anomaly-Detection Hierarchical Deep Learning Model
+description: Hierarchical Deep Learning Model for Water Consumption Anomaly Detection with Web Visualization.
+img: assets/img/water.png
 importance: 2
 category: work
 giscus_comments: true
@@ -79,5 +79,10 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+
+<div class="caption">
+    On the left, a throughput benchmarking of Z Learning and Q Learning using the proper embedding from LMDP to MDP for precise comparison. On the right, the value function of the MDP for a small grid environment of 5 x 5 cells.
+</div>
 
 My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.
