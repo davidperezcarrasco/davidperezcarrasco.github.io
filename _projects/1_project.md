@@ -8,9 +8,9 @@ category: work
 related_publications: false
 ---
 
-<div style="text-align: justify">
-    While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a [novel deterministic action simulator specifically designed for sequential decision-making tasks](https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes). This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
-</div>
+
+While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a [novel deterministic action simulator specifically designed for sequential decision-making tasks](https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes). This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
+
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -24,6 +24,5 @@ related_publications: false
     On the left, a throughput benchmarking of Z Learning and Q Learning using the proper embedding from LMDP to MDP for precise comparison. On the right, the value function of the MDP for a small grid environment of 5 x 5 cells.
 </div>
 
-<div style="text-align: justify">
-    My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.
-</div>
+
+My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.
