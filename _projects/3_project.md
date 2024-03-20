@@ -81,7 +81,7 @@ Here's the code for the last row of images above:
 {% endraw %}
 
 <div class="caption">
-    On the left, a throughput benchmarking of Z Learning and Q Learning using the proper embedding from LMDP to MDP for precise comparison. On the right, the value function of the MDP for a small grid environment of 5 x 5 cells.
+    This image can also have a caption. It's like magic.
 </div>
 
 
