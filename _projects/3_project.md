@@ -1,14 +1,22 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Image Super Resolution Using Generative Adversarial Networks
+description: GAN-based Image Super-Resolution for Enhanced Detail Recovery.
+img: assets/img/results.jpg
 importance: 3
 category: work
 ---
 
 While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a [novel deterministic action simulator specifically designed for sequential decision-making tasks](https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes). This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/minigrid_plots2.png" title="Throughput Comparison between Z Learning for a LMDP and Q Learning for an embedded MDP" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/value_function3.png" title="Optimal value function of a 4x4 Grid" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
