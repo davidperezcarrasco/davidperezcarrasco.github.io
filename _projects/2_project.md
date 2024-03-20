@@ -8,11 +8,13 @@ category: work
 giscus_comments: false
 ---
 
-Water distribution networks in urban environments face the crucial challenge of detecting anomalies like leaks, excessive consumption, or meter errors. These anomalies often go unnoticed until significant water loss occurs. This project tackles this critical issue by presenting a novel, adaptable deep learning meta-model specifically designed for anomaly detection in water meter data.  [Our model](https://github.com/davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model), leveraging the power of LSTMs and Transformers, effectively captures sequential consumption patterns and identifies deviations from normal behavior.  This enables early detection of anomalies, potentially leading to significant cost savings for both water companies and consumers, while promoting sustainable water usage.
+Water distribution networks in urban environments face the crucial challenge of detecting anomalies like leaks, excessive consumption, or meter errors. These anomalies often go unnoticed until significant water loss occurs. This project tackles this critical issue by presenting a novel, adaptable deep learning meta-model specifically designed for anomaly detection in water meter data.  
 
 **A Deep Learning Approach**
 
 Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets  like water consumption data.  Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks.  Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application.
+
+[Our model](https://github.com/davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model), leveraging the power of LSTMs and Transformers, effectively captures sequential consumption patterns and identifies deviations from normal behavior.  This enables early detection of anomalies, potentially leading to significant cost savings for both water companies and consumers, while promoting sustainable water usage.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -33,10 +35,10 @@ The core of this project lies in its hierarchical deep learning architecture, sp
     </div>
 </div>
 <div class="caption">
-    Multi-Stage Deep Learning Meta Model with Hierarchical Training.
+    Multi-Stage Deep Learning Meta Model with Hierarchical Training
 </div>
 
- This balance between adaptability to specific data patterns and overall robustness in anomaly detection is achieved through the integration of three key components:
+This balance between adaptability to specific data patterns and overall robustness in anomaly detection is achieved through the integration of three key components:
 
 - **[TranAD](https://github.com/imperial-qore/TranAD)**: This transformer-based model excels at identifying deviations in time series data. It undergoes a two-phase adversarial training process to capture both short-term trends and long-term dependencies within the data.
 
@@ -52,7 +54,7 @@ The synergy between these components lies at the heart of the model's power.  Th
     </div>
 </div>
 <div class="caption">
-    LSTM consumption predictions and detected anomalies for a unique time serie. 
+    LSTM consumption predictions and detected anomalies for a unique time serie
 </div>
 
 **Interactive Anomaly Visualization**
@@ -61,7 +63,7 @@ Our project is complemented by a comprehensive web application designed for user
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/img/visualization.mp4" title="Web-App Visualization" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid loading="eager" path="assets/video/visualization.mp4" title="Web-App Visualization" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
