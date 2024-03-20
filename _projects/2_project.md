@@ -51,7 +51,7 @@ Our project is complemented by a comprehensive web application designed for user
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/anomaly_visualization.png" title="LSTM consumption predictions & detected anomalies" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Map.png" title="LSTM consumption predictions & detected anomalies" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Prophet.jpg" title="Future Consumption predictions with Prophet" class="img-fluid rounded z-depth-1" %}
@@ -64,7 +64,7 @@ Our project is complemented by a comprehensive web application designed for user
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Map.png" title="Geographical Visualization of the detected anomalies" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/anomaly_visualization.png" title="Geographical Visualization of the detected anomalies" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
