@@ -7,7 +7,7 @@ importance: 3
 category: work
 ---
 
-This project delves into the realm of Image Super-Resolution (SR), a technique for generating high-resolution (HR) images from their low-resolution (LR) counterparts. This capability is particularly valuable when dealing with blurred or pixelated images,  enabling the recovery of lost details and creation of visually superior versions.  Our approach leverages the power of Generative Adversarial Networks (GANs), specifically the architecture proposed by [Super Resolution Generative Adversarial Networks (SRGAN)](https://arxiv.org/pdf/1609.04802.pdf).
+This project delves into the realm of Image Super-Resolution (SR), a technique for generating high-resolution (HR) images from their low-resolution (LR) counterparts. This capability is particularly valuable when dealing with blurred or pixelated images, enabling the recovery of lost details and creation of visually superior versions. Our approach leverages the power of Generative Adversarial Networks (GANs), specifically the architecture proposed by [Super Resolution Generative Adversarial Networks (SRGAN)](https://arxiv.org/pdf/1609.04802.pdf).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
