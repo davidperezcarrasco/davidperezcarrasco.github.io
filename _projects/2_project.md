@@ -12,7 +12,7 @@ Water distribution networks in urban environments face the crucial challenge of 
 
 **A Deep Learning Approach**
 
-Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets  like water consumption data.  Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks.  Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application.
+Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets  like water consumption data.  Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks.  Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application (see Shreshth Tuli, Giuliano Casale, and Nicholas R. Jennings. [Tranad: Deep transformer networks for anomaly detection in multivariate time series data](https://github.com/imperial-qore/TranAD). 2022)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -20,7 +20,7 @@ Traditional machine learning methods like SVMs and Isolation Forests often strug
     </div>
 </div>
 <div class="caption">
-    Transformer AD Architecture. Shreshth Tuli, Giuliano Casale, and Nicholas R. Jennings. Tranad: Deep transformer networks for anomaly detection in multivariate time series data. 2022
+    Transformer AD Architecture
 </div>
 
 [Our model](https://github.com/davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model), leveraging the power of LSTMs and Transformers, effectively captures sequential consumption patterns and identifies deviations from normal behavior.  This enables early detection of anomalies, potentially leading to significant cost savings for both water companies and consumers, while promoting sustainable water usage.
