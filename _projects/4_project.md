@@ -7,7 +7,7 @@ importance: 3
 category: fun
 ---
 
-Our project is complemented by a comprehensive web application designed for user-friendly exploration of water consumption patterns and anomalies. This intuitive interface allows visualization of multiple time series simultaneously, aiding in informed decision-making.
+Our project is complemented by a comprehensive web application designed for user-friendly exploration of water consumption patterns and anomalies. This intuitive interface allows visualization of multiple time series simultaneously, aiding in informed decision-making. The application offers in-depth analysis of anomalous data, including visualizations of model predictions alongside actual consumption values, highlighting anomaly points.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
