@@ -10,7 +10,7 @@ giscus_comments: false
 
 Water distribution networks in urban environments face the crucial challenge of detecting anomalies like leaks, excessive consumption, or meter errors. These anomalies often go unnoticed until significant water loss occurs. This project tackles this critical issue by presenting a novel, adaptable deep learning meta-model specifically designed for anomaly detection in water meter data.
 
-## A Deep Learning Approach
+## Leveraging Deep Learning for Time Series
 
 Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets like water consumption data. Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks. Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application (see Shreshth Tuli, Giuliano Casale, and Nicholas R. Jennings. [Tranad: Deep transformer networks for anomaly detection in multivariate time series data](https://github.com/imperial-qore/TranAD) 2022).
 
