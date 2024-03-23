@@ -12,7 +12,7 @@ Water distribution networks in urban environments face the crucial challenge of 
 
 ### Leveraging Deep Learning for Time Series
 
-Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets like water consumption data. Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks. Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application (see Shreshth Tuli, Giuliano Casale, and Nicholas R. Jennings. [Tranad: Deep transformer networks for anomaly detection in multivariate time series data](https://github.com/imperial-qore/TranAD) 2022).
+Traditional machine learning methods like SVMs and Isolation Forests often struggle with large, time-dependent datasets like water consumption data. Deep learning methods, on the other hand, have shown promising results in anomaly detection tasks. Transformers, in particular, excel at identifying complex patterns in sequential data, making them a strong candidate for this application ([Tuli, Casale, & Jennings, 2022](https://arxiv.org/abs/2201.07284)).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
