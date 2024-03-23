@@ -48,9 +48,13 @@ Furthermore, to enhance the Discriminator's ability to discern real from generat
 
 The training process involves optimizing a combination of loss functions. The Content Loss, initially implemented as MSE loss, was ultimately replaced with VGG-based perceptual loss to incorporate higher-level feature information. We also employ the Wasserstein Loss function for the Discriminator, promoting stable training dynamics. Finally, a Perceptual Loss is calculated, combining the Content Loss with the Discriminator's feedback to guide the Generator towards producing realistic and detailed HR images.
 
-### Hyperparameter Tuning and Evaluation
+### Training Performance and Evaluation
 
 Hyperparameter tuning plays a crucial role in achieving optimal model performance. We experimented with various learning rates, both unique and specific to different network components. The number of training epochs was carefully considered, balancing computational cost with the potential for diminishing returns. Additionally, we explored strategies for regulating the adversarial training process, ensuring a balanced competition between the Generator and Discriminator. Batch size selection was guided by the usage of Batch Normalization or Instance Normalization within the network architecture.
+
+**Convergence Analysis**
+
+The SRGAN training exhibits successful convergence, with the generator loss steadily decreasing to below 0.01 after 50 epochs, indicating effective learning to produce high-resolution images. The discriminator loss consistently hovers around -1, which aligns with the expected behavior for Wasserstein GANs where the loss is bounded. While a negative loss might seem unusual, it signifies the discriminator's difficulty in differentiating between the generated high-resolution images and the real data. This reinforces the effectiveness of the training process, as the goal is precisely to generate images that closely resemble real HR examples. Furthermore, the fluctuations observed in the discriminator loss during initial stages are common in GAN training, reflecting the optimization process. In conclusion, the loss patterns provide strong evidence that the SRGAN is functioning well and achieving its objective of generating high-quality, realistic HR images.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -63,8 +67,6 @@ Hyperparameter tuning plays a crucial role in achieving optimal model performanc
 <div class="caption">
     Discriminator and Generator Losses
 </div>
-
-The SRGAN training demonstrates successful convergence. The generator loss exhibits a significant and sustained decrease, reaching values below 0.01 after 50 epochs. This substantial decline strongly suggests the generator's effectiveness in progressively learning and refining its ability to produce high-resolution images. Notably, the discriminator loss achieves a consistent value of -1, which aligns with the expected behavior for Wasserstein GANs where the loss is bounded. While a negative loss might seem unusual, it signifies the discriminator's difficulty in differentiating between the generated high-resolution images and the real data. This reinforces the effectiveness of the training process, as the goal is precisely to generate images that closely resemble real HR examples. Furthermore, the initial decrease in both losses with some fluctuations in the discriminator loss is a common observation in GAN training and reflects the optimization process reaching equilibrium. In conclusion, the loss patterns provide strong evidence that the SRGAN is functioning well and achieving its objective of generating high-quality, realistic HR images.
 
 To evaluate the model's effectiveness, we employed two standard image quality metrics: Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM). These metrics quantify the fidelity between the generated HR image and the ground truth HR image. Our final model, termed Weighted Dense ResNet (WDRN) with VGG SRGAN, achieved a PSNR of 29.23 and SSIM of 0.739 after 50 epochs of training.
 
@@ -88,7 +90,7 @@ To further assess our model's performance, we directly compare its generated ima
         {% include figure.liquid loading="eager" path="assets/img/srgan-low.png" title="Original Low Resolution Image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/srgan-benchmark.png" title="Super Resolution Generated Image from Baseline SRGAN Architecture" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/srgan-benchmark-blur.png" title="Super Resolution Generated Image from Baseline SRGAN Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/srgan-sr" title="Super Resolution Generated Image from our SRGAN Architecture" class="img-fluid rounded z-depth-1" %}
@@ -97,3 +99,13 @@ To further assess our model's performance, we directly compare its generated ima
 <div class="caption">
     From left to right:  Original Low-Resolution Input, Baseline SRGAN Output (potential blur), Our Model's Output (improved quality and smoothness)
 </div>
+
+### References
+
+Arjovsky, M., Chintala, S., & Bottou, L. (2017, July). [Wasserstein generative adversarial networks](https://proceedings.mlr.press/v70/arjovsky17a.html). In International conference on machine learning (pp. 214-223). PMLR.
+
+Chen, X., Wang, X., Zhou, J., Qiao, Y., & Dong, C. (2023). [Activating more pixels in image super-resolution transformer](https://openaccess.thecvf.com/content/CVPR2023/html/Chen_Activating_More_Pixels_in_Image_Super-Resolution_Transformer_CVPR_2023_paper.html). In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 22367-22377).
+
+Huang, G., Liu, Z., Van Der Maaten, L., & Weinberger, K. Q. (2017). [Densely connected convolutional networks](https://openaccess.thecvf.com/content_cvpr_2017/html/Huang_Densely_Connected_Convolutional_CVPR_2017_paper.html). In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 4700-4708).
+
+Ledig, C., Theis, L., Huszár, F., Caballero, J., Cunningham, A., Acosta, A., ... & Shi, W. (2017). [Photo-realistic single image super-resolution using a generative adversarial network](https://openaccess.thecvf.com/content_cvpr_2017/html/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.html). In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 4681-4690).

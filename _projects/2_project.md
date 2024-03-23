@@ -69,3 +69,21 @@ Our project is complemented by a comprehensive web application designed for user
 <div class="caption">
     Web-App Visualization of Exploratory Data Analysis and Model Predictions and Results
 </div>
+
+### References
+
+Guha, S., Mishra, N., Roy, G., & Schrijvers, O. (2016, June). [Robust random cut forest based anomaly detection on streams](https://proceedings.mlr.press/v48/guha16.html). In International conference on machine learning (pp. 2712-2721). PMLR.
+
+Li, K. L., Huang, H. K., Tian, S. F., & Xu, W. (2003, November). [Improving one-class SVM for anomaly detection](https://ieeexplore.ieee.org/abstract/document/1260106). In Proceedings of the 2003 international conference on machine learning and cybernetics (IEEE Cat. No. 03EX693) (Vol. 5, pp. 3077-3081). IEEE.
+
+Lin, S., Clark, R., Birke, R., Schönborn, S., Trigoni, N., & Roberts, S. (2020, May). [Anomaly detection for time series using vae-lstm hybrid model](https://ieeexplore.ieee.org/abstract/document/9053558). In ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 4322-4326). Ieee.
+
+Liu, F. T., Ting, K. M., & Zhou, Z. H. (2008, December). [Isolation forest](https://ieeexplore.ieee.org/abstract/document/4781136). In 2008 eighth ieee international conference on data mining (pp. 413-422). IEEE.
+
+Pang, G., Shen, C., Cao, L., & Hengel, A. V. D. (2021). [Deep learning for anomaly detection: A review](https://dl.acm.org/doi/abs/10.1145/3439950). ACM computing surveys (CSUR), 54(2), 1-38.
+
+Su, Y., Zhao, Y., Niu, C., Liu, R., Sun, W., & Pei, D. (2019, July). [Robust anomaly detection for multivariate time series through stochastic recurrent neural network](https://dl.acm.org/doi/abs/10.1145/3292500.3330672). In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining (pp. 2828-2837).
+
+Tuli, S., Casale, G., & Jennings, N. R. (2022). [Tranad: Deep transformer networks for anomaly detection in multivariate time series data](https://arxiv.org/abs/2201.07284). arXiv preprint arXiv:2201.07284.
+
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). [Attention is all you need](https://proceedings.neurips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html). Advances in neural information processing systems, 30.
