@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Data Analytics Web App for Software Developer Salary Predictions
+description: Interactive platform leveraging data analytics and machine learning to predict software developers' salaries, offering actionable insights for talent management.
+img: assets/img/dev-map
+importance: 4
+category: work
 ---
 
 Our project is complemented by a comprehensive web application designed for user-friendly exploration of water consumption patterns and anomalies. This intuitive interface allows visualization of multiple time series simultaneously, aiding in informed decision-making. The application offers in-depth analysis of anomalous data, including visualizations of model predictions alongside actual consumption values, highlighting anomaly points. Furthermore, it empowers users to explore future consumption predictions and geographically visualize anomalies across different areas. By integrating socioeconomic indicators, the web application facilitates strategic decision-making for optimized water resource management.
