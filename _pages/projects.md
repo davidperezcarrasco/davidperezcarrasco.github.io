@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Some details about my projects spanning Data Science, Big Data analytics, Machine Learning, Artificial Intelligence, Deep Learning, and Reinforcement Learning research. (This page is under development)
+description: Some details about my projects. (This page is under development)
 nav: true
 nav_order: 3
 horizontal: false
