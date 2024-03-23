@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Data Analytics Web App for Software Developer Salary Predictions
-description: Interactive platform leveraging data analytics and machine learning to predict software developers' salaries, offering actionable insights for talent management.
+description: Interactive platform leveraging data analytics and machine learning to predict software developers' salaries, offering actionable insights.
 img: assets/img/dev-map
 importance: 4
 category: work
 ---
 
-This project is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the Stack Overflow Annual Developer Survey. By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, empowering them to make informed decisions in talent management and career planning within the tech industry.
+[This project](https://github.com/davidperezcarrasco/Visual-Data-Analytics-Web-App-with-ML-Predictions) is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey). By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, empowering them to make informed decisions in talent management and career planning within the tech industry.
 
 At the core of the project lies its Dashboard feature, serving as a comprehensive hub for data exploration and analysis. Through a variety of visually-rich EDA visualizations, ranging from violin plots illustrating salary distributions per experience level to heatmaps showcasing regional variations in salary ranges, users gain deep insights into the factors influencing salary dynamics across different demographics. Additionally, the Dashboard offers an intuitive interface for navigating through diverse data perspectives, allowing users to explore software developer distribution by country, experience, and salary range with ease. By presenting complex datasets in digestible visual representations, the Dashboard fosters a deeper understanding of the underlying trends shaping the tech job market.
 
