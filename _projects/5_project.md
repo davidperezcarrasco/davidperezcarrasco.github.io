@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
+title: Football Data Management with Oracle and SQL
+description: Relational database built with Oracle for managing and exploring football data through advanced SQL queries.
+img: assets/img/db-er.png
 importance: 5
 category: work
 ---
