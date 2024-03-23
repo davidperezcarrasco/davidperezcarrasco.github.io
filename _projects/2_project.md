@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Anomaly Detection Hierarchical Deep Learning Model
-description: Hierarchical Deep Learning model incorporating Transformers and LSTMs to detect anomalies in water consumption data, presented with an interactive web visualization.
+description: Hierarchical Deep Learning model for anomaly detection in water consumption data, presented with an interactive web visualization.
 img: assets/img/Map.png
 importance: 2
 category: work
