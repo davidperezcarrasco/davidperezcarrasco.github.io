@@ -42,3 +42,31 @@ The second dashboard focuses on artist collaborations, a key aspect of the music
 </div>
 
 Exploring collaborations exposes intriguing patterns. An artist might frequently collaborate with another artist, but this doesn't always guarantee the most successful partnership. For example, The Weeknd has collaborated with Gesaffelstein twice, but his biggest hit in terms of streams is with Daft Punk, reaching a massive 2.5 billion streams for a single song. Similarly, Drake's most streamed collaboration involves WizKid, surpassing the combined streams of his eight collaborations with 21 Savage. These insights highlight the potential for unexpected discoveries within the data, revealing collaborations that outperform more frequent pairings.
+
+### Interactive Exploration of Streaming Trends Over Time
+
+Diving deeper, this dashboard explores how music streaming trends evolve over time. Users can navigate through years, months, and even days using interactive line plots. Selecting a specific year instantly refines the visualizations below. The month and day charts update dynamically, showcasing streaming data only for songs released in that chosen year. This allows for a granular exploration of how streaming patterns change throughout the year. Additionally, a dynamic bar chart displays the most streamed artists for the selected timeframe. Uniquely, this bar chart breaks down each artist's performance by their top songs, providing a detailed picture of artist and song popularity within that period. For example, user interaction can reveal which artists dominated specific days, months, or years, like uncovering Justin Bieber's most streamed songs released in June. This level of interactivity empowers users to conduct a comprehensive analysis of streaming trends across various timeframes.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tb-time.png" title="Streaming Trends Over Time" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Total Streams Over Time
+</div>
+
+### Exploring Artist and Song Longevity
+
+This final dashboard sheds light on a unique aspect of music popularity - how long songs and artists stay relevant on charts and playlists. Stepping away from pure streaming numbers, we delve into weeks spent on charts across various platforms like Spotify, Deezer, Apple Music, and Shazam. The centerpiece is a dynamic treemap showcasing the top artists based on the total weeks charted by all their songs. Interactive bar charts complement this view, displaying the top songs by weeks in charts and top songs by weeks in playlists. Selecting an artist within the treemap refines the song charts, allowing for a focused exploration of their performance.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tb-charts.png" title="Popular Artists and Songs by charts and playlists" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Popular Artists and Songs by charts and playlists
+</div>
+
+This exploration uncovers fascinating insights that challenge traditional measures of music popularity. An artist might achieve significant streaming success but not necessarily lead the charts. For instance, Taylor Swift might hold the top spot based on chart longevity, while The Weeknd may dominate streaming platforms. Similarly, "Vampire" might top the charts, while "Get Lucky" dominates playlists. These discoveries highlight a key takeaway: most streamed songs don't necessarily translate to songs that stay on charts or playlists the longest. This interactive dashboard empowers users to delve deeper, uncovering hidden trends and patterns within music popularity, ultimately revealing the multifaceted nature of achieving success in the music industry.
