@@ -56,7 +56,7 @@ The synergy between these components lies at the heart of the model's power. The
     </div>
 </div>
 <div class="caption">
-    LSTM & Transformer consumption predictions and detected anomalies for a unique time serie
+    LSTM & Transformer consumption predictions and detected anomalies for different time series
 </div>
 
 ### Interactive Anomaly Visualization

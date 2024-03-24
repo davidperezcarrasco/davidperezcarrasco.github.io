@@ -15,9 +15,7 @@ Prior to data visualization, a thorough data cleaning process ensured data integ
 
 ### User-Driven Analysis of Streaming Data
 
-This first dashboard invites users on an interactive journey to explore music streaming trends across artists, songs, and time. The centerpiece is a dynamic treemap showcasing the most streamed artists. Clicking on any artist within the treemap instantly refines the visualizations below. The bar chart transforms to display the top streamed songs by the selected artist(s), allowing for artist-specific song exploration. Similarly, the line plot dynamically adjusts, revealing the evolution of streaming popularity for the chosen artist(s) over the years. 
-
-But the exploration doesn't stop there! Users can delve deeper by selecting a specific time range. This custom time frame filters the data, updating the treemap to reflect artist popularity within that period. This unveils valuable insights, such as identifying artists who gained significant traction during a specific era. This interactivity extends to the number of artists displayed. Users can choose to visualize a specific number of top artists, with the treemap and subsequent visualizations adjusting accordingly. This level of user control empowers in-depth exploration of music streaming data, uncovering hidden trends and patterns within various timeframes and artist selections.
+This first dashboard invites an interactive exploration of music streaming trends across artists, songs, and time. A dynamic treemap showcases the most streamed artists, with clicks refining visualizations below. The bar chart transforms to display top streamed songs by selected artist(s) for artist-specific exploration. Similarly, the line plot adjusts, revealing artist streaming popularity over time. User control extends further - selecting a time range refines the treemap based on artist popularity within that period, uncovering era-specific trends. Additionally, users can choose the number of top artists displayed, with all visualizations adjusting accordingly. This empowers in-depth exploration, uncovering hidden trends and patterns within various timeframes and artist selections.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -30,3 +28,17 @@ But the exploration doesn't stop there! Users can delve deeper by selecting a sp
 
 This interactive dashboard unlocks fascinating insights into music streaming trends. Users can explore the who, what, and when of music popularity. By investigating different timeframes, we can identify dominant artists of various eras and witness the evolution of streaming giants. For example, while The Weeknd currently reigns supreme with Blinding Lights holding the top spot overall, user interaction can unearth fascinating shifts. Selecting specific years might expose how Bad Bunny dominated the early 2020s or Eminem ruled the late 20th century. This exploration empowers users to uncover the most streamed artists and songs for any period, along with their streaming totals. Drilling down on individual artists unveils their cumulative streaming growth over time.
 
+### Artist Collaboration Analysis
+
+The second dashboard focuses on artist collaborations, a key aspect of the music industry. The main view is a dynamic bubble chart, with bubble size and color representing each artist's total streams. Users can explore data for specific timeframes or limit the number of artists displayed.  Selecting an artist within the bubble chart unlocks further details.  The visualizations below shift to showcase the artist's most frequent collaborators and their most successful collaborations in terms of streaming numbers. This allows for a direct comparison, revealing whether frequent collaborations translate into the most successful ones for each artist.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/tb-featurings.png" title="Featurings Dashboard" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Dynamic Featurings Dashboard
+</div>
+
+Exploring collaborations exposes intriguing patterns.  An artist might frequently collaborate with another artist, but this doesn't always guarantee the most successful partnership.  For example, The Weeknd has collaborated with Gesaffelstein twice, but his biggest hit in terms of streams is with Daft Punk, reaching a massive 2.5 billion streams for a single song.  Similarly, Drake's most streamed collaboration involves WizKid, surpassing the combined streams of his eight collaborations with 21 Savage.  These insights highlight the potential for unexpected discoveries within the data, revealing collaborations that outperform more frequent pairings.
