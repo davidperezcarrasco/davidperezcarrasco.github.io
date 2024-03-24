@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: Data Visualization of Spotify Streaming Trends with Tableau
+description: Interactive Tableau dashboards for analyzing Spotify streaming data, including artist co-occurrence networks and time series decomposition for identifying emerging trends.
+img: assets/img/tb-streams
 importance: 6
 category: work
 ---
