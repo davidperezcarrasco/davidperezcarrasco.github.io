@@ -4,7 +4,7 @@ title: Generative Adversarial Networks for Image Super-Resolution
 description: GAN-based Image Super-Resolution for enhanced detail recovery, achieving  4x upscaling of image resolution while preserving fine details.
 img: assets/img/more_results.jpg
 importance: 3
-category: work
+category: Machine Learning
 ---
 
 This project delves into the realm of Image Super-Resolution (SR), a technique for generating high-resolution (HR) images from their low-resolution (LR) counterparts. This capability is particularly valuable when dealing with blurred or pixelated images, enabling the recovery of lost details and creation of visually superior versions. Our approach leverages the power of Generative Adversarial Networks (GANs), specifically the architecture proposed by [Super Resolution Generative Adversarial Networks (SRGAN)](https://arxiv.org/pdf/1609.04802.pdf).

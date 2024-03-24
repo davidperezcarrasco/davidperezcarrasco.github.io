@@ -4,8 +4,7 @@ title: Novel Algorithms for Linearly Solvable Markov Decision Processes
 description: Reinforcement learning framework for LMDPs, enabling evaluation of state-of-the-art algorithms for performance and scalability in complex domains.
 img: assets/img/grid15.png
 importance: 1
-category: work
-related_publications: false
+category: Research
 ---
 
 While working for the UPF Machine Learning & AI Research Group, I tackled the challenge of applying reinforcement learning (RL) to increasingly complex decision-making problems. I developed a [novel deterministic action simulator specifically designed for sequential decision-making tasks](https://github.com/davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes). This simulator seamlessly integrates with popular RL libraries, enabling the evaluation of cutting-edge algorithms within the framework of Linearly-solvable Markov Decision Processes (LMDPs).

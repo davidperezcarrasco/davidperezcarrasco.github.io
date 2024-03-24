@@ -5,6 +5,7 @@ permalink: /projects/
 description: Some details about my projects. (This page is under development)
 nav: true
 nav_order: 3
+display_categories: [Research, Machine Learning, Data Science]
 horizontal: false
 ---
 

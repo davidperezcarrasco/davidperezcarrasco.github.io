@@ -4,7 +4,7 @@ title: Data Analytics Web App for Software Dev Salary Predictions
 description: Interactive platform leveraging data analytics and machine learning to predict software developers' salaries, offering actionable insights.
 img: assets/img/dev-map
 importance: 4
-category: work
+category: Data Science
 ---
 
 [This project](https://github.com/davidperezcarrasco/Visual-Data-Analytics-Web-App-with-ML-Predictions) is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey). By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, empowering them to make informed decisions in talent management and career planning within the tech industry.
