@@ -47,13 +47,16 @@ This balance between adaptability to specific data patterns and overall robustne
 
 The synergy between these components lies at the heart of the model's power. The precise anomaly detection capabilities of TranAD are complemented by the Multi-LSTM's ability to handle complex temporal dependencies. Finally, the MLP effectively combines these strengths, leading to a robust and versatile solution for anomaly detection in water consumption data.
 
-<div class="row">
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/anomaly_visualization.png" title="LSTM consumption predictions and detected anomalies for a unique time serie" class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/ab-tranviz.png" title="Transformer consumption predictions and detected anomalies for a unique time serie" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 <div class="caption">
-    LSTM consumption predictions and detected anomalies for a unique time serie
+    LSTM & Transformer consumption predictions and detected anomalies for a unique time serie
 </div>
 
 ### Interactive Anomaly Visualization
