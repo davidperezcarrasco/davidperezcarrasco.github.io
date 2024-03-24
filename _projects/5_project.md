@@ -47,10 +47,10 @@ These tables serve as the foundation for storing and organizing information abou
 This project transcends a simple data repository by providing a user-friendly interface for interacting with the football data and conducting in-depth analyses. Designed with accessibility in mind, the interface caters to users of varying technical backgrounds. The main menu offers a clear and concise layout, presenting a range of functionalities categorized for intuitive navigation.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         At its core, the interface offers the fundamental CRUD (Create, Read, Update, Delete) operations on the data tables. These operations empower users to maintain data integrity by adding new teams, updating existing information, deleting outdated data, and retrieving specific player or team details. But the true power lies in the ability to perform advanced data exploration using SQL queries. The interface extends functionality beyond basic operations, allowing users to leverage joins (combining data from multiple tables based on defined relationships), aggregations (grouping and summarizing data) with and without filtering, and even nested aggregations (multi-level grouping) for complex analyses. Imagine a user exploring historical trends in player performance by combining player and match tables through a join operation, or identifying top scorers within a specific league using a nested aggregation – all facilitated by the intuitive interface.
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/db-menu.png" title="Database Interface Menu" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
