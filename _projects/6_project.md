@@ -30,7 +30,7 @@ This interactive dashboard unlocks fascinating insights into music streaming tre
 
 ### Artist Collaboration Analysis
 
-The second dashboard focuses on artist collaborations, a key aspect of the music industry. The main view is a dynamic bubble chart, with bubble size and color representing each artist's total streams. Users can explore data for specific timeframes or limit the number of artists displayed.  Selecting an artist within the bubble chart unlocks further details.  The visualizations below shift to showcase the artist's most frequent collaborators and their most successful collaborations in terms of streaming numbers. This allows for a direct comparison, revealing whether frequent collaborations translate into the most successful ones for each artist.
+The second dashboard focuses on artist collaborations, a key aspect of the music industry. The main view is a dynamic bubble chart, with bubble size and color representing each artist's total streams. Users can explore data for specific timeframes or limit the number of artists displayed. Selecting an artist within the bubble chart unlocks further details. The visualizations below shift to showcase the artist's most frequent collaborators and their most successful collaborations in terms of streaming numbers. This allows for a direct comparison, revealing whether frequent collaborations translate into the most successful ones for each artist.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -41,4 +41,4 @@ The second dashboard focuses on artist collaborations, a key aspect of the music
     Dynamic Featurings Dashboard
 </div>
 
-Exploring collaborations exposes intriguing patterns.  An artist might frequently collaborate with another artist, but this doesn't always guarantee the most successful partnership.  For example, The Weeknd has collaborated with Gesaffelstein twice, but his biggest hit in terms of streams is with Daft Punk, reaching a massive 2.5 billion streams for a single song.  Similarly, Drake's most streamed collaboration involves WizKid, surpassing the combined streams of his eight collaborations with 21 Savage.  These insights highlight the potential for unexpected discoveries within the data, revealing collaborations that outperform more frequent pairings.
+Exploring collaborations exposes intriguing patterns. An artist might frequently collaborate with another artist, but this doesn't always guarantee the most successful partnership. For example, The Weeknd has collaborated with Gesaffelstein twice, but his biggest hit in terms of streams is with Daft Punk, reaching a massive 2.5 billion streams for a single song. Similarly, Drake's most streamed collaboration involves WizKid, surpassing the combined streams of his eight collaborations with 21 Savage. These insights highlight the potential for unexpected discoveries within the data, revealing collaborations that outperform more frequent pairings.
