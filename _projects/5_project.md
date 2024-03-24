@@ -7,74 +7,68 @@ importance: 5
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+[This project](https://github.com/davidperezcarrasco/Football-Data-App-with-Oracle-SQL-Java-and-PHP) delves into the heart of football data, constructing a comprehensive relational database management system tailored for in-depth analysis. Oracle, a leading database engine, provides the project's foundation, ensuring efficient data storage, retrieval, and manipulation for building a rich football data repository. The user interface and backend logic leverage Java and PHP, offering a user-friendly experience for data interaction and exploration.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Entity-Relationship Modeling
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+Underpinning the project's functionality lies a meticulously designed Entity-Relationship (ER) diagram. 
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-er.png" title="Entity-Relationship Diagram" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Entity-Relationship Diagram of the Football Database
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This visual representation serves as the database blueprint, explicitly outlining the various entities within the football domain, such as teams, players, coaches, matches, and stadiums. The relationships between these entities, for instance, "plays for" or "scores," are clearly defined, providing a comprehensive understanding of the data structure. Furthermore, cardinalities, specifying the number of occurrences within a relationship (e.g., one player playing for one team at a time), and key constraints, guaranteeing unique identification of each entity within a table (e.g., a player's unique ID), are meticulously specified within the diagram. This meticulous approach ensures data integrity and facilitates efficient querying by the user interface and underlying SQL statements.
 
-{% raw %}
+### Building the Database with SQL
 
-```html
+Leveraging the insights gathered from the ER diagram, the project utilizes Structured Query Language (SQL) to construct the database schema within Oracle. SQL, a powerful and standardized language specifically designed for interacting with relational databases, empowers the project to create all the necessary data tables within the Oracle database.
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-team.png" title="Team Table Instances" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-person.png" title="Person Works For Relationship Set Instances" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Instances retrieved from team table and person works for relationship set
+</div>
 
-{% endraw %}
+These tables serve as the foundation for storing and organizing information about teams, players, leagues, matches, goals, and other relevant entities pertinent to the football domain. Furthermore, the project adheres to best practices for data integrity by implementing appropriate data types, primary and foreign keys to enforce relationships between tables, and constraints to ensure data validity.
+
+### User-Friendly Interface for Data Retrieval
+
+This project transcends a simple data repository by providing a user-friendly interface for interacting with the football data and conducting in-depth analyses. Designed with accessibility in mind, the interface caters to users of varying technical backgrounds. The main menu offers a clear and concise layout, presenting a range of functionalities categorized for intuitive navigation.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-menu.png" title="Database Interface Menu" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Interface Menu for the Data Retrieval
+</div>
+
+At its core, the interface offers the fundamental CRUD (Create, Read, Update, Delete) operations on the data tables. These operations empower users to maintain data integrity by adding new teams, updating existing information, deleting outdated data, and retrieving specific player or team details. But the true power lies in the ability to perform advanced data exploration using SQL queries.  The interface extends functionality beyond basic operations, allowing users to leverage joins (combining data from multiple tables based on defined relationships), aggregations (grouping and summarizing data) with and without filtering, and even nested aggregations (multi-level grouping) for complex analyses.  Imagine a user exploring historical trends in player performance by combining player and match tables through a join operation, or identifying top scorers within a specific league using a nested aggregation – all facilitated by the intuitive interface.
+
+**Seamless Integration**
+
+The PHP and Java user interface seamlessly connects to the Oracle database. This ensures users see immediate updates whenever they interact with the features.  Carefully written code translates user actions into specific SQL queries. These queries interact with the database, manipulating and retrieving data as needed.  For example, clicking "Show all players of each Nationality" triggers a simple "Select" query to fetch player names and nationalities.  A more complex scenario, like finding top scorers in a league, involves a more intricate "Nested Group By Aggregate" query. This query joins multiple tables (player, goal, etc.) and uses nested grouping to deliver the desired results. The user interface then displays these results, giving users immediate feedback and insights from the football data.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-nest.png" title="Top Scorers Feature Selection" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/db-nest2.png" title="Top Scorers Feature Results" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Top Scorers Feature, using a Nested Aggregation with Group By operation
+</div>

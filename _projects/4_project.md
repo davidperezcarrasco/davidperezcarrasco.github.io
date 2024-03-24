@@ -9,7 +9,7 @@ category: work
 
 [This project](https://github.com/davidperezcarrasco/Visual-Data-Analytics-Web-App-with-ML-Predictions) is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey). By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, empowering them to make informed decisions in talent management and career planning within the tech industry.
 
-### Data Visualiza
+### Data Exploration & Analytics
 
 At the core of the project lies its Dashboard feature, serving as a comprehensive hub for data exploration and analysis. Through a variety of visually-rich EDA visualizations, ranging from violin plots illustrating salary distributions per experience level to heatmaps showcasing regional variations in salary ranges, users gain deep insights into the factors influencing salary dynamics across different demographics. Additionally, the Dashboard offers an intuitive interface for navigating through diverse data perspectives, allowing users to explore software developer distribution by country, experience, and salary range with ease. By presenting complex datasets in digestible visual representations, the Dashboard fosters a deeper understanding of the underlying trends shaping the tech job market.
 
@@ -33,7 +33,7 @@ The interactive web application incorporates two world maps, further enriching t
     Visual Analytics World Map page
 </div>
 
-The Prediction Tools embedded within the web app offer users personalized salary estimates based on diverse parameters such as country, education, and experience. Leveraging sophisticated machine learning algorithms, the Prediction Tools empower users to make informed decisions regarding career opportunities and salary negotiations. Whether estimating individual salary projections or comparing salary differentials between two countries, the Prediction Tools provide users with actionable insights to navigate the complexities of the tech job market with confidence and precision.
+### ML Salary Predictions
 
 The web application empowers users to take an active role in exploring their salary potential. It leverages a machine learning model, specifically a Random Forest Regressor, to predict salaries based on user-provided information such as country, education level, and years of experience. This goes beyond a singular prediction, offering data-driven insights for informed decision-making. For example, the application might compare the predicted salary with the average salary for the chosen country and experience level. Furthermore, interactive visualizations like trend plots showcase how predicted salaries might evolve based on varying years of experience. Adding another layer of exploration, the feature allows users to compare salary predictions for multiple countries under the same experience and education level, providing valuable insights into potential salary variations across geographical locations.
 
