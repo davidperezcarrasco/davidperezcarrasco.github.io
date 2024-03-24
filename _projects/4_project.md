@@ -7,7 +7,7 @@ importance: 4
 category: Data Science
 ---
 
-[This project](https://github.com/davidperezcarrasco/Visual-Data-Analytics-Web-App-with-ML-Predictions) is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey). By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, empowering them to make informed decisions in talent management and career planning within the tech industry.
+[This project](https://github.com/davidperezcarrasco/Visual-Data-Analytics-Web-App-with-ML-Predictions) is a comprehensive endeavor aimed at providing deep insights into the salary landscape of software developers based on data gathered from the [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey). By leveraging advanced data analytics techniques and machine learning models, the project provides users with actionable insights into salary trends, enabling them to make informed decisions in talent management and career planning within the tech industry.
 
 ### Data Exploration & Analytics
 
