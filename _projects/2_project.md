@@ -67,7 +67,7 @@ The synergy between these components lies at the heart of the model's power. The
     </div>
 </div>
 <div class="caption">
-    Prophet Forecast for a time series.
+    Prophet Forecast for a time series
 </div>
 
 ### Interactive Anomaly Visualization

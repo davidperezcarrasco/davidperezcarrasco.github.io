@@ -15,7 +15,7 @@ At the core of the project lies its Dashboard feature, serving as a comprehensiv
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dev-StreamlitEDA.png" title="Exploratory Data Analysis" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid loading="eager" path="assets/video/dev-eda.mp4" title="Exploratory Data Analysis" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
@@ -26,7 +26,7 @@ The interactive web application incorporates two world maps, further enriching t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dev-StreamlitMap.png" title="Visual Analytics World Map" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid loading="eager" path="assets/video/dev-map.mp4" title="Visual Analytics World Map page" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
@@ -39,7 +39,7 @@ The web application empowers users to take an active role in exploring their sal
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dev-StreamlitPredict.png" title="ML Salary Predictions" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid loading="eager" path="assets/video/dev-predict.mp4" title="ML Salary Predictions page" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
     </div>
 </div>
 <div class="caption">
