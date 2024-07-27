@@ -11,7 +11,7 @@ As part of my Bachelor's Thesis, I conducted in-depth research on reinforcement 
 
 This research evaluates and benchmarks the performance of traditional RL models against algorithms leveraging LMDPs, such as Z-learning, within an adaptable reinforcement learning framework. By implementing scalable and efficient versions of these algorithms, I provide a comprehensive comparison that highlights the advantages of LMDP-based approaches. Additionally, the thesis delves into various factors that enhance the decision-making capabilities of RL agents, such as algorithm design and exploration strategies, demonstrating the superiority of the LMDP framework in multiple settings. Moreover, I developed an [RL simulator](https://github.com/davidperezcarrasco/Efficient-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes) that provides a generalized implementation of MDP and LMDP frameworks. This simulator supports optimized core methods and seamless integration with repositories like Minigrid and Gymnasium, allowing researchers to easily extend and apply it to diverse problem definitions without the need to build custom solutions.
 
-## Linearly Solvable Markov Decision Processes
+<!-- ## Linearly Solvable Markov Decision Processes
 
 LMDPs represent a specialized subclass of MDPs that achieve more efficient computation of optimal policies and value functions by leveraging linear programming techniques. Unlike traditional MDPs that solve nonlinear Bellman equations, LMDPs reformulate these equations into a linear form, significantly enhancing computational efficiency and scalability.
 
@@ -53,7 +53,7 @@ Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the val
     \EndWhile
 \Until{convergence}
 \end{algorithmic}
-\end{algorithm}
+\end{algorithm} 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -67,4 +67,4 @@ Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the val
     On the left, a throughput benchmarking of Z Learning and Q Learning using the proper embedding from LMDP to MDP for precise comparison. On the right, the value function of the MDP for a small grid environment of 5 x 5 cells.
 </div>
 
-My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.
+My research focused on enhancing the performance and scalability of state-of-the-art RL algorithms like Q-Learning and Z-Learning. By applying these algorithms to challenging Minigrid environments, I explored and evaluated methods to improve their efficacy in handling complex decision-making tasks. This involved developing efficient computational techniques for optimal action selection and optimizing value function approximation within linear LMDPs. Furthermore, I investigated the impact of exploration decay rates on the performance and convergence of these algorithms.-->
