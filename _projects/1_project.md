@@ -23,10 +23,12 @@ LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \
 - $$\lambda$$: Temperature parameter.
 
 The optimality Bellman equation for LMDPs is:
-<!-- $$
+
+$$
 \frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}\left[z\right](s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}\left[z\right](s)}\right)
 $$
-where $$\mathcal{G}\left[z\right](s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ and $$z(s) = e^{\frac{v(s)}{\lambda}} \quad \forall s \in \mathcal{S}$$, 
+
+<!-- where $$\mathcal{G}\left[z\right](s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ and $$z(s) = e^{\frac{v(s)}{\lambda}} \quad \forall s \in \mathcal{S}$$, 
 and 
 $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. -->
 
