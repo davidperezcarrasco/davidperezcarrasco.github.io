@@ -74,14 +74,16 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 The embedding of stochastic MDPs into LMDPs involves the following system of equations:
 
 $$
-\begin{aligned}
+ \begin{empheq}[box=\fbox]{align} 
+    \begin{split}
     m_{s'} &= \log{\mathcal{P}(s' | s)} \\
     b_a &= \tilde{\mathcal{R}}(s,a) + \sum_{s' \in \mathcal{S}} \tilde{\mathcal{P}}(s' | s, a) \log{\tilde{\mathcal{P}}(s' | s, a)} \\
     D_{as'} &= \tilde{\mathcal{P}}(s' | s, a)
-\end{aligned}
+    \end{split}
+\end{empheq}
 $$
 
-By leveraging the stochasticity of matrix $$ D $$ ($$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
+By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
 
 $$
 D\left(\mathcal{R}\mathbf{1} + \mathbf{m}\right) = \mathbf{b}
