@@ -82,7 +82,7 @@ $$
 $$
 
 <div class="text-center">
-    <img src="assets/img/lmdps/stochastic-mdp-embedding.png" alt="Embedding of stochastic MDP into LMDP" style="max-width: 100%; height: auto;">
+    <img src="assets/img/lmdps/system-equations.png" alt="Embedding of stochastic MDP into LMDP" style="max-width: 100%; height: auto;">
 </div>
 
 By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
