@@ -13,26 +13,24 @@ This research evaluates and benchmarks the performance of traditional RL models 
 
 ## Linearly Solvable Markov Decision Processes
 
-$$ e_o $$
-
 LMDPs represent a specialized subclass of MDPs that achieve more efficient computation of optimal policies and value functions by leveraging linear programming techniques. Unlike traditional MDPs that solve nonlinear Bellman equations, LMDPs reformulate these equations into a linear form, significantly enhancing computational efficiency and scalability.
 
-An LMDP is defined by a tuple \( \langle \mathcal{S}, \mathcal{P}, \mathcal{R} \rangle \) where:
-- \( \mathcal{S} \) is a set of states.
-- \( \mathcal{P}(s'|s) \) is an uncontrolled transition probability distribution.
-- \( \mathcal{R}(s) \) is an expected reward function.
+An LMDP is defined by a tuple $$ \langle \mathcal{S}, \mathcal{P}, \mathcal{R} \rangle $$ where:
+- $$ \mathcal{S} $$ is a set of states.
+- $$ \mathcal{P}(s'|s) $$ is an uncontrolled transition probability distribution.
+- $$ \mathcal{R}(s) $$ is an expected reward function.
 
 The controlled transition probabilities are defined as:
-\[ \mathcal{P}_{\mathbf{u}}(s' | s) = \mathcal{P}(s' | s) e^{u_{s'}} \]
+$$ \mathcal{P}_{\mathbf{u}}(s' | s) = \mathcal{P}(s' | s) e^{u_{s'}} $$
 
 The optimality Bellman equation, transformed using the exponential function, is:
-\[ z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') \]
+$$ z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') $$
 
 This can be written in matrix form as:
-\[ \mathbf{z} = G\mathcal{P}\mathbf{z} \]
+$$ \mathbf{z} = G\mathcal{P}\mathbf{z} $$
 
-Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the value of \( \mathbf{z} \) based on observed transitions and rewards:
-\[ \hat{z}(s_t) \gets (1 - \alpha)\hat{z}(s_t) + \alpha e^{r_t/\lambda}\hat{z}(s_{t+1}) \]
+Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the value of $$ \mathbf{z} $$ based on observed transitions and rewards:
+$$ \hat{z}(s_t) \gets (1 - \alpha)\hat{z}(s_t) + \alpha e^{r_t/\lambda}\hat{z}(s_{t+1}) $$
 
 <!--### Z-learning Algorithm
 
@@ -40,18 +38,18 @@ Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the val
 \caption{Z-learning}
 \label{alg:z-learning}
 \begin{algorithmic}[1]
-\State \textbf{input:} learning rate \( \alpha \in (0,1] \), temperature parameter \( \lambda > 0 \), LMDP with \( \mathcal{R} \), \( \mathcal{P} \), \( \mathcal{S} \), \( \mathcal{S}^- \), \( \mathcal{T} \)
-\State \textbf{output:} \( \hat{Z}: S \rightarrow \mathbb{R} \)
-\State \textbf{initialize} \( \hat{Z}(s) \leftarrow 1 \) for all \( s \in \mathcal{S}^- \), \( \hat{Z}(s) \leftarrow e^{\mathcal{R}(s)/\lambda} \) for all \( s \in \mathcal{T} \), \( \hat{\mathcal{P}_{\mathbf{u}}} \leftarrow \mathcal{P} \)
+\State \textbf{input:} learning rate $$ \alpha \in (0,1] $$, temperature parameter $$ \lambda > 0 $$, LMDP with $$ \mathcal{R} $$, $$ \mathcal{P} $$, $$ \mathcal{S} $$, $$ \mathcal{S}^- $$, $$ \mathcal{T} $$
+\State \textbf{output:} $$ \hat{Z}: S \rightarrow \mathbb{R} $$
+\State \textbf{initialize} $$ \hat{Z}(s) \leftarrow 1 $$ for all $$ s \in \mathcal{S}^- $$, $$ \hat{Z}(s) \leftarrow e^{\mathcal{R}(s)/\lambda} $$ for all $$ s \in \mathcal{T} $$, $$ \hat{\mathcal{P}_{\mathbf{u}}} \leftarrow \mathcal{P} $$
 \Repeat
-\State \( s_t \gets s_0 \) (sample state from initial state distribution)
-    \While{\( s_t \notin \mathcal{T} \)}
-    \State Take reward \( r_t \) from the current state \( s_t \).
-    \State \( G[z](s_t) \leftarrow \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s)\hat{Z}(s') \)
-    \State \( \hat{Z}(s_t) \leftarrow \hat{Z}(s_t) + \alpha [ e^{r_t/\lambda} G[z](s_t) - \hat{Z}(s_t) ] \)
-    \State Update \( \hat{\mathcal{P}_{\mathbf{u}}} \) derived from \( \hat{Z} \)
-    \State Sample a next state \( s_{t+1} \) according to \( \hat{\mathcal{P}_{\mathbf{u}}} \)
-    \State \( s_t \leftarrow s_{t+1} \)
+\State $$ s_t \gets s_0 $$ (sample state from initial state distribution)
+    \While{$$ s_t \notin \mathcal{T} $$}
+    \State Take reward $$ r_t $$ from the current state $$ s_t $$.
+    \State $$ G[z](s_t) \leftarrow \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s)\hat{Z}(s') $$
+    \State $$ \hat{Z}(s_t) \leftarrow \hat{Z}(s_t) + \alpha [ e^{r_t/\lambda} G[z](s_t) - \hat{Z}(s_t) ] $$
+    \State Update $$ \hat{\mathcal{P}_{\mathbf{u}}} $$ derived from $$ \hat{Z} $$
+    \State Sample a next state $$ s_{t+1} $$ according to $$ \hat{\mathcal{P}_{\mathbf{u}}} $$
+    \State $$ s_t \leftarrow s_{t+1} $$
     \EndWhile
 \Until{convergence}
 \end{algorithmic}
