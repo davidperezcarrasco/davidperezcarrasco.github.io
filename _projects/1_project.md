@@ -71,7 +71,7 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 ### Embedding Stochastic MDPs into LMDPs
 
-The embedding of stochastic MDPs into LMDPs involves the following system of $\left|\mathcal{A}\right|$ equations for a fixed state $$s$$:
+The embedding of stochastic MDPs into LMDPs involves the following system of $$\left|\mathcal{A}\right|$$ equations for a fixed state $$s$$:
 
 $$
 \begin{aligned}
@@ -80,10 +80,6 @@ $$
     D_{as'} &= \tilde{\mathcal{P}}(s' | s, a)
 \end{aligned}
 $$
-
-<div class="col-md-8 col-lg-6">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/system-equations.png" class="img-fluid z-depth-0" %}
-</div>
 
 By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
 
@@ -104,6 +100,7 @@ $$
 $$
 
 We then find the corresponding $$\mathbf{m}$$ using this normalization condition, thereby ensuring that the solution adheres to the probabilistic constraints of the LMDP framework. The entire embedding process from [Todorov (2006)](#todorov-2006) has been implemented in a vectorized manner, significantly enhancing the efficiency and scalability of the methodology.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/stochastic-mdp-embedding.png" title="Embedding of stochastic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
@@ -111,6 +108,41 @@ We then find the corresponding $$\mathbf{m}$$ using this normalization condition
 </div>
 <div class="caption">
     Embedding of stochastic MDP into LMDP implementation
+</div>
+
+### Embedding Stochastic MDPs into LMDPs
+
+When the MDP is deterministic, the previous embedding technique cannot be performed, as there is no entropy within the transition probability distribution. This makes the exact construction of an LMDP infeasible. Todorov's approach can still be used by removing the entropy factor and scaling out the rewards when necessary, but it leads to suboptimal approximations. Therefore, an alternative methodology has been proposed in this work, presenting a novel approach for accurately and efficiently constructing the most precise possible LMDP from a deterministic MDP, outperforming previous baselines in embedding precision and robustness.
+
+
+The first alternative method involves considering a stochastic “policy" to translate the MDP to an LMDP. This method results in:
+
+$$
+\mathcal{R}(s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{R}}(s,a) \quad \text{for all } s \in \mathcal{S}
+$$
+$$
+\mathcal{P}(s' | s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{P}}(s' | s,a) \quad \text{for all } s \in \mathcal{S}^-, s' \in \mathcal{S}
+$$
+
+However, the equivalence between the MDP and LMDP rewards must consider the Kullback-Leibler's divergence as:
+
+$$
+\tilde{\mathcal{R}}(s,a) = \mathcal{R}(s) - \lambda KL \left( \mathcal{P}_{\textbf{u}}  \bigg\Vert \mathcal{P} \right)
+$$
+
+To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$ as:
+
+$$
+\mathcal{R}(s) = \tilde{\mathcal{R}}(s,a) + \lambda KL \left( \mathcal{P}_{\textbf{u}} \bigg\Vert \mathcal{P} \right)
+$$
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Embedding of deterministic MDP into LMDP implementation through SPA method
 </div>
 
 ## References
