@@ -15,9 +15,9 @@ This research evaluates and benchmarks the performance of traditional RL models 
 
 LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \mathcal{P}, \mathcal{R}, \lambda)$$ where:
 
-- $$\mathcal{S}$$: Set of states.
 - $$\mathcal{S}^-$$: Set of non-terminal states.
 - $$\mathcal{T}$$: Set of terminal states.
+- $$\mathcal{S}: \mathcal{S}^- \cup \mathcal{T}$$: Set of states.
 - $$\mathcal{P}: \mathcal{S}^- \to \Delta(\mathcal{S})$$: Passive dynamics.
 - $$\mathcal{R}: \mathcal{S} \to \mathbb{R}$$: Reward function.
 - $$\lambda$$: Temperature parameter.
@@ -25,12 +25,12 @@ LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \
 The optimality Bellman equation for LMDPs is:
 
 $$
-\frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}\left[z\right](s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}\left[z\right](s)}\right)
+\frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}_{z}(s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}_{z}(s)}\right) \quad \forall s \in \mathcal{S}^-
 $$
 
-<!-- where $$\mathcal{G}\left[z\right](s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ and $$z(s) = e^{\frac{v(s)}{\lambda}} \quad \forall s \in \mathcal{S}$$, 
-and 
-$$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. -->
+where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$
+
+with  $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. 
 
 
 <!--### Z-learning Algorithm
