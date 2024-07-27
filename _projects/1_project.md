@@ -2,7 +2,7 @@
 layout: page
 title: Efficient Algorithms for Linearly Solvable Markov Decision Processes
 description: Study of Linearly Solvable Markov Decision Processes, incorporating novel embedding techniques and scalable solutions.
-img: assets/img/grid15.png
+img: assets/img/lmdps/grid15.png
 importance: 1
 category: Research
 ---
@@ -54,13 +54,13 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/power-iteration-alg.png" title="Power Iteration Algorithm" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/power-iteration-alg.png" title="Power Iteration Algorithm" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Power Iteration Algorithm
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/z-learning-alg.png" title="Z-learning Algorithm" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/z-learning-alg.png" title="Z-learning Algorithm" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Z-learning Algorithm
         </div>
@@ -71,7 +71,7 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 ### Embedding Stochastic MDPs into LMDPs
 
-The embedding of stochastic MDPs into LMDPs involves the following system of equations:
+The embedding of stochastic MDPs into LMDPs involves the following system of $\left|\mathcal{A}\right|$ equations for a fixed state $$s$$:
 
 $$
  \begin{empheq}[box=\fbox]{align} 
@@ -88,6 +88,28 @@ By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} =
 $$
 D\left(\mathcal{R}\mathbf{1} + \mathbf{m}\right) = \mathbf{b}
 $$
+
+This linear system can be solved for $$\mathbf{c} = \mathcal{R}\mathbf{1} + \mathbf{m}$$ using a linear solver, resulting in:
+
+$$
+\mathbf{m} = \mathbf{c} - \mathcal{R}\mathbf{1}
+$$
+
+This formulation allows for flexibility in the choice of $$\mathcal{R}$$. However, to ensure that the uncontrolled transition probabilities $$\mathcal{P}$$ are normalized, we define:
+
+$$
+\mathcal{R} = \log{\sum_{s' \in \mathcal{S}}e^{-c_{s'}}}
+$$
+
+We then find the corresponding $$\mathbf{m}$$ using this normalization condition, thereby ensuring that the solution adheres to the probabilistic constraints of the LMDP framework. The entire embedding process from [Todorov (2006)](#todorov-2006) has been implemented in a vectorized manner, significantly enhancing the efficiency and scalability of the methodology.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/stochastic-mdp-embedding.png" title="Embedding of stochastic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Embedding of stochastic MDP into LMDP implementation
+</div>
 
 ## References
 
