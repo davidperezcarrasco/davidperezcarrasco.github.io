@@ -52,25 +52,11 @@ $$
 
 The analogous algorithm to Q-learning in LMDPs is Z-learning, introduced by Todorov:
 
-### Z-learning Algorithm
-
-\begin{algorithm}
-\caption{Z-learning}
-\label{alg:z-learning}
-\begin{algorithmic}[1]
-\State \textbf{input:} learning rate $$ \alpha \in (0,1] $$, temperature parameter $$ \lambda > 0 $$, LMDP with $$ \mathcal{R} $$, $$ \mathcal{P} $$, $$ \mathcal{S} $$, $$ \mathcal{S}^- $$, $$ \mathcal{T} $$
-\State \textbf{output:} $$ \hat{Z}: S \rightarrow \mathbb{R} $$
-\State \textbf{initialize} $$ \hat{Z}(s) \leftarrow 1 $$ for all $$ s \in \mathcal{S}^- $$, $$ \hat{Z}(s) \leftarrow e^{\mathcal{R}(s)/\lambda} $$ for all $$ s \in \mathcal{T} $$, $$ \hat{\mathcal{P}_{\mathbf{u}}} \leftarrow \mathcal{P} $$
-\Repeat
-\State $$ s_t \gets s_0 $$ (sample state from initial state distribution)
-    \While{$$ s_t \notin \mathcal{T} $$}
-    \State Take reward $$ r_t $$ from the current state $$ s_t $$.
-    \State $$ G[z](s_t) \leftarrow \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s)\hat{Z}(s') $$
-    \State $$ \hat{Z}(s_t) \leftarrow \hat{Z}(s_t) + \alpha [ e^{r_t/\lambda} G[z](s_t) - \hat{Z}(s_t) ] $$
-    \State Update $$ \hat{\mathcal{P}_{\mathbf{u}}} $$ derived from $$ \hat{Z} $$
-    \State Sample a next state $$ s_{t+1} $$ according to $$ \hat{\mathcal{P}_{\mathbf{u}}} $$
-    \State $$ s_t \leftarrow s_{t+1} $$
-    \EndWhile
-\Until{convergence}
-\end{algorithmic}
-\end{algorithm} 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/z-learning-alg.png" title="Z-learning Algorithm" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Z-learning Algorithm
+</div>
