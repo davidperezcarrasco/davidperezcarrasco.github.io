@@ -81,7 +81,7 @@ $$
 \end{aligned}
 $$
 
-<div class="col-sm mt-3 mt-md-0">
+<div class="col-md-8 col-lg-6">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/system-equations.png" class="img-fluid z-depth-1" %}
 </div>
 
