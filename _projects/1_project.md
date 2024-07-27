@@ -11,7 +11,7 @@ As part of my Bachelor's Thesis, I conducted in-depth research on reinforcement 
 
 This research evaluates and benchmarks the performance of traditional RL models against algorithms leveraging LMDPs, such as Z-learning, within an adaptable reinforcement learning framework. By implementing scalable and efficient versions of these algorithms, I provide a comprehensive comparison that highlights the advantages of LMDP-based approaches. Additionally, the thesis delves into various factors that enhance the decision-making capabilities of RL agents, such as algorithm design and exploration strategies, demonstrating the superiority of the LMDP framework in multiple settings. Moreover, I developed an [RL simulator](https://github.com/davidperezcarrasco/Efficient-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes) that provides a generalized implementation of MDP and LMDP frameworks. This simulator supports optimized core methods and seamless integration with repositories like Minigrid and Gymnasium, allowing researchers to easily extend and apply it to diverse problem definitions without the need to build custom solutions.
 
-<!--## Linearly Solvable Markov Decision Processes
+## Linearly Solvable Markov Decision Processes
 
 LMDPs represent a specialized subclass of MDPs that achieve more efficient computation of optimal policies and value functions by leveraging linear programming techniques. Unlike traditional MDPs that solve nonlinear Bellman equations, LMDPs reformulate these equations into a linear form, significantly enhancing computational efficiency and scalability.
 
@@ -32,7 +32,7 @@ This can be written in matrix form as:
 Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the value of \( \mathbf{z} \) based on observed transitions and rewards:
 \[ \hat{z}(s_t) \gets (1 - \alpha)\hat{z}(s_t) + \alpha e^{r_t/\lambda}\hat{z}(s_{t+1}) \]
 
-### Z-learning Algorithm
+<!--### Z-learning Algorithm
 
 \begin{algorithm}
 \caption{Z-learning}
