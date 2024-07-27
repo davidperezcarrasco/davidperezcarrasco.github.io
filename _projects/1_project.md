@@ -120,6 +120,7 @@ The first alternative method involves considering a stochastic “policy" to tra
 $$
 \mathcal{R}(s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{R}}(s,a) \quad \text{for all } s \in \mathcal{S}
 $$
+
 $$
 \mathcal{P}(s' | s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{P}}(s' | s,a) \quad \text{for all } s \in \mathcal{S}^-, s' \in \mathcal{S}
 $$
@@ -127,14 +128,10 @@ $$
 However, the equivalence between the MDP and LMDP rewards must consider the Kullback-Leibler's divergence as:
 
 $$
-\tilde{\mathcal{R}}(s,a) = \mathcal{R}(s) - \lambda KL \left( \mathcal{P}_{\textbf{u}}  \bigg\Vert \mathcal{P} \right)
+\tilde{\mathcal{R}}(s,a) = \mathcal{R}(s) - \lambda KL \left( \mathcal{P}_{\textbf{u}}  \Vert \mathcal{P} \right)
 $$
 
-To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$ as:
-
-$$
-\mathcal{R}(s) = \tilde{\mathcal{R}}(s,a) + \lambda KL \left( \mathcal{P}_{\textbf{u}} \bigg\Vert \mathcal{P} \right)
-$$
+To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
