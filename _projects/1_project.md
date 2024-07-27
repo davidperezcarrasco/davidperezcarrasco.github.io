@@ -67,11 +67,31 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
     </div>
 </div>
 
+## Embedding Methodologies
+
+### Embedding Stochastic MDPs into LMDPs
+
+The embedding of stochastic MDPs into LMDPs involves the following system of equations:
+
+$$
+\begin{aligned}
+    m_{s'} &= \log{\mathcal{P}(s' | s)} \\
+    b_a &= \tilde{\mathcal{R}}(s,a) + \sum_{s' \in \mathcal{S}} \tilde{\mathcal{P}}(s' | s, a) \log{\tilde{\mathcal{P}}(s' | s, a)} \\
+    D_{as'} &= \tilde{\mathcal{P}}(s' | s, a)
+\end{aligned}
+$$
+
+By leveraging the stochasticity of matrix $$ D $$ ($$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
+
+$$
+D\left(\mathcal{R}\mathbf{1} + \mathbf{m}\right) = \mathbf{b}
+$$
+
 ## References
 
-[G´omez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, *Machine Learning and Knowledge Discovery in Databases*, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
+[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, *Machine Learning and Knowledge Discovery in Databases*, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
 
-[G´omez et al., 2020] Gómez, V., Thijssen, S., Symington, A., Hailes, S., and Kappen, H. J. (2020). Real-time stochastic optimal control for multi-agent quadrotor systems.
+[Gómez et al., 2020] Gómez, V., Thijssen, S., Symington, A., Hailes, S., and Kappen, H. J. (2020). Real-time stochastic optimal control for multi-agent quadrotor systems.
 
 [Infante et al., 2022] Infante, G., Jonsson, A., and Gómez, V. (2022). Globally optimal hierarchical reinforcement learning for linearly-solvable markov decision processes. *Proceedings of the AAAI Conference on Artificial Intelligence*, 36(6):6970–6977.
 
