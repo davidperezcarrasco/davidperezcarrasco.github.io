@@ -73,7 +73,6 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 The embedding of stochastic MDPs into LMDPs involves the following system of $\left|\mathcal{A}\right|$ equations for a fixed state $$s$$:
 
-<div style="border:1px solid; padding: 10px; display: inline-block;">
 $$
 \begin{aligned}
     m_{s'} &= \log{\mathcal{P}(s' | s)} \\
@@ -81,6 +80,11 @@ $$
     D_{as'} &= \tilde{\mathcal{P}}(s' | s, a)
 \end{aligned}
 $$
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/system-equations.png" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 
 By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
