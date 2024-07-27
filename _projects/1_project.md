@@ -13,24 +13,23 @@ This research evaluates and benchmarks the performance of traditional RL models 
 
 ## Linearly Solvable Markov Decision Processes
 
-LMDPs represent a specialized subclass of MDPs that achieve more efficient computation of optimal policies and value functions by leveraging linear programming techniques. Unlike traditional MDPs that solve nonlinear Bellman equations, LMDPs reformulate these equations into a linear form, significantly enhancing computational efficiency and scalability.
+LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \mathcal{P}, \mathcal{R}, \lambda)$$ where:
 
-An LMDP is defined by a tuple $$ \langle \mathcal{S}, \mathcal{P}, \mathcal{R} \rangle $$ where:
-- $$ \mathcal{S} $$ is a set of states.
-- $$ \mathcal{P}(s'|s) $$ is an uncontrolled transition probability distribution.
-- $$ \mathcal{R}(s) $$ is an expected reward function.
+- $$\mathcal{S}$$: Set of states.
+- $$\mathcal{S}^-$$: Set of non-terminal states.
+- $$\mathcal{T}$$: Set of terminal states.
+- $$\mathcal{P}: \mathcal{S}^- \to \Delta(\mathcal{S})$$: Passive dynamics.
+- $$\mathcal{R}: \mathcal{S} \to \mathbb{R}$$: Reward function.
+- $$\lambda$$: Temperature parameter.
 
-The controlled transition probabilities are defined as:
-$$ \mathcal{P}_{\mathbf{u}}(s' | s) = \mathcal{P}(s' | s) e^{u_{s'}} $$
+The optimality Bellman equation for LMDPs is:
+$$
+\frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}\left[z\right](s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}\left[z\right](s)}\right)
+$$
+where $$\mathcal{G}\left[z\right](s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ and $$z(s) = e^{\frac{v(s)}{\lambda}} \quad \forall s \in \mathcal{S}$$, 
+and 
+$$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$.
 
-The optimality Bellman equation, transformed using the exponential function, is:
-$$ z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') $$
-
-This can be written in matrix form as:
-$$ \mathbf{z} = G\mathcal{P}\mathbf{z} $$
-
-Z-learning, an on-line learning algorithm for LMDPs, iteratively updates the value of $$ \mathbf{z} $$ based on observed transitions and rewards:
-$$ \hat{z}(s_t) \gets (1 - \alpha)\hat{z}(s_t) + \alpha e^{r_t/\lambda}\hat{z}(s_{t+1}) $$
 
 <!--### Z-learning Algorithm
 
