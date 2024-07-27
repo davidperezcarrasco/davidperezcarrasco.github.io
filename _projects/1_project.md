@@ -50,13 +50,16 @@ $$
 \mathcal{P}_{\mathbf{u}^*}(s' | s) = \frac{\mathcal{P}(s' | s) z(s')}{\sum_{s'' \in \mathcal{S}} \mathcal{P}(s'' | s) z(s'')}
 $$
 
-The analogous algorithm to Q-learning in LMDPs is Z-learning, introduced by Todorov:
+The iterative method to solve the final matrix equation is Power Iteration, which is equivalent to Value Iteration in MDPs. However, when a model of the environment is not available, an online algorithm becomes necessary. The analogous online algorithm to Q-learning in LMDPs is Z-learning, introduced by Todorov:
 
-<div class="row">
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/power-iteration-alg.png" title="Power Iteration Algorithm" class="img-fluid rounded z-depth-1" %}
+    </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/z-learning-alg.png" title="Z-learning Algorithm" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Z-learning Algorithm
+    Power Iteration and Z_learning algorithms.
 </div>
