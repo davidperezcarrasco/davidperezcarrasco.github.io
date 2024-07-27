@@ -82,7 +82,7 @@ $$
 $$
 
 <div class="col-md-8 col-lg-6">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/system-equations.png" class="img-fluid z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/system-equations.png" class="img-fluid z-depth-0" %}
 </div>
 
 By leveraging the stochasticity of matrix $$ D $$ (resulting in $$ D\mathbf{1} = \mathbf{1} $$), this system can be expressed in matrix form as:
