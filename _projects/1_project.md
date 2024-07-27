@@ -30,6 +30,24 @@ $$
 
 where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ with  $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. 
 
+Using this exponential transformation, the Bellman equation can be reformulated as:
+
+$$
+z(s) = e^{\mathcal{R}(s)/\lambda}  \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s')
+$$
+
+In matrix form, this is expressed as:
+
+$$
+\mathbf{z} = G\mathcal{P}\mathbf{z}
+$$
+
+The optimally controlled transition probabilities can be obtained using the following equation:
+
+$$
+\mathcal{P}_{\mathbf{u}^*}(s' | s) = \frac{\mathcal{P}(s' | s) z(s')}{\sum_{s'' \in \mathcal{S}} \mathcal{P}(s'' | s) z(s'')}
+$$
+
 
 <!--### Z-learning Algorithm
 
