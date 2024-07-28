@@ -250,7 +250,7 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/hill.gif" title="Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include figure.liquid loading="eager" path="assets/video/lmdps/hill.gif" title="Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1"%}
         <div class="caption">
             Hill-Cliff with Q-learning
     </div>
