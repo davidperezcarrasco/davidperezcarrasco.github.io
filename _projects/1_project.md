@@ -71,7 +71,7 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 ### Embedding Stochastic MDPs into LMDPs
 
-The embedding of stochastic MDPs into LMDPs involves the following system of $$\mathcal{A}$$ equations for a fixed state $$s$$:
+The embedding of stochastic MDPs into LMDPs involves the following system of $$\vert\mathcal{A}\vert$$ equations for a fixed state $$s$$:
 
 $$
 \begin{aligned}
