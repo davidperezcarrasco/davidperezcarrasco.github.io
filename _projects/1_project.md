@@ -67,7 +67,7 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
     </div>
 </div>
 
-## Embedding Methodologies
+## Methodology
 
 ### Embedding Stochastic MDPs into LMDPs
 
@@ -191,12 +191,16 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
         </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-embedding-mdp-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Deterministic MDP Embedding Approximations MSE Comparison by problem size
         </div>
     </div>
 </div>
+
+## Experimentation
+
+
 
 ## References
 
