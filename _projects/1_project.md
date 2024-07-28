@@ -134,7 +134,7 @@ $$
 To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$.
 
 <div class="row justify-content-center">
-    <div class="col-md-6 mt-3 mt-md-0">
+    <div class="col-md-10 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -154,6 +154,7 @@ $$
 \begin{aligned}
 \min_{K \in \mathbb{R}} \quad \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2 \\
 \text{subject to} \quad \quad & \mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}}, \\
+& G_{ii} = e^{\mathcal{R}(s_i)/\lambda}, \quad \forall i, \\
 & \mathbf{z}_K = G\mathcal{P}\mathbf{z}_K, \\
 & \mathbf{v}_K = \lambda \log{\mathbf{z}_K}, \\
 & \mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
