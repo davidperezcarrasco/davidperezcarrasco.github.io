@@ -134,7 +134,7 @@ $$
 To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-5 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -152,10 +152,20 @@ Where $$ \hat{\mathcal{R}}(s) $$ is the initial approximation of $$ \mathcal{R} 
 
 $$
 \begin{aligned}
-\min_{K \in \mathbb{R}} \quad & \sum_{s \in \mathcal{S}} \left( \lambda \log{z(s)} - v^*(s) \right)^2, \\
-\text{subject to} \quad & \mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}, \\
+\mathbf{\min}_{K \in \mathbb{R}} \quad \quad & \sum_{s \in \mathcal{S}} \left( \lambda \log{z(s)} - v^*(s) \right)^2, \\
+\textbf{subject to} \quad & \mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}, \\
 & z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') \quad \text{for all } s \in \mathcal{S}, \\
 & v(s) = \max_{a} \left[ \tilde{\mathcal{R}}(s, a) + \gamma \sum_{s'} \tilde{\mathcal{P}}(s' | s, a) v^*(s') \right] \quad \text{for all } s \in \mathcal{S}.
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\mathbf{\min}_{K \in \mathbb{R}} \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2, \\
+\text{subject to} \quad & \mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}}, \\
+& \mathbf{z} = G\mathcal{P}\mathbf{z}, \\
+& \mathbf{v}_K = \lambda \log{\mathbf{z}}, \\
+& \mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
 \end{aligned}
 $$
 
