@@ -110,7 +110,7 @@ We then find the corresponding $$\mathbf{m}$$ using this normalization condition
     Embedding of stochastic MDP into LMDP implementation
 </div>
 
-### Embedding Stochastic MDPs into LMDPs
+### Embedding Deterministic MDPs into LMDPs
 
 When the MDP is deterministic, the previous embedding technique cannot be performed, as there is no entropy within the transition probability distribution. This makes the exact construction of an LMDP infeasible. Todorov's approach can still be used by removing the entropy factor and scaling out the rewards when necessary, but it leads to suboptimal approximations. Therefore, an alternative methodology has been proposed in this work, presenting a novel approach for accurately and efficiently constructing the most precise possible LMDP from a deterministic MDP, outperforming previous baselines in embedding precision and robustness.
 
@@ -134,7 +134,7 @@ $$
 To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-8">
+    <div class="col-md-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -160,6 +160,17 @@ $$
 & \mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
 \end{aligned}
 $$
+
+Binary Search (BS) can be employed to solve this minimization problem. However, although $$\mathbf{v}_K$$ is a monotonically increasing function, the objective function is unimodal, making Ternary Search (TS) marginally more suitable for this problem.
+
+<div class="row justify-content-sm-center">
+    <div class="col-md-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-ts.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption text-center">
+    Embedding of deterministic MDP into LMDP implementation through TS method
+</div>
 
 ## References
 
