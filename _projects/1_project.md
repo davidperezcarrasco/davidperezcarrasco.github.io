@@ -2,7 +2,7 @@
 layout: page
 title: Efficient Algorithms for Linearly Solvable Markov Decision Processes
 description: Study of Linearly Solvable Markov Decision Processes, incorporating novel embedding techniques and scalable solutions.
-img: assets/img/lmdps/wallpaper3.png
+img: assets/img/lmdps/wallpaper4.png
 importance: 1
 category: Research
 ---
