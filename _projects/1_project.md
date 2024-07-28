@@ -2,7 +2,7 @@
 layout: page
 title: Efficient Algorithms for Linearly Solvable Markov Decision Processes
 description: Study of Linearly Solvable Markov Decision Processes, incorporating novel embedding techniques and scalable solutions.
-img: assets/img/lmdps/deterministic-mdp-embedding-scatter.png
+img: assets/img/lmdps/wallpaper.png
 importance: 1
 category: Research
 ---
@@ -223,7 +223,7 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
     </div>
 </div>
 <div class="caption">
-    Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning in a Minigrid multi-room domain.
+    Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.
 </div>
 
 #### Value Function and Policy Approximations
