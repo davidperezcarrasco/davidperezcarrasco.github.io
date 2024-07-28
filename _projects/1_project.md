@@ -152,17 +152,8 @@ Where $$ \hat{\mathcal{R}}(s) $$ is the initial approximation of $$ \mathcal{R} 
 
 $$
 \begin{aligned}
-\mathbf{\min}_{K \in \mathbb{R}} \quad \quad & \sum_{s \in \mathcal{S}} \left( \lambda \log{z(s)} - v^*(s) \right)^2, \\
-\textbf{subject to} \quad & \mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}, \\
-& z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') \quad \text{for all } s \in \mathcal{S}, \\
-& v(s) = \max_{a} \left[ \tilde{\mathcal{R}}(s, a) + \gamma \sum_{s'} \tilde{\mathcal{P}}(s' | s, a) v^*(s') \right] \quad \text{for all } s \in \mathcal{S}.
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\mathbf{\min}_{K \in \mathbb{R}} \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2, \\
-\text{subject to} \quad & \mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}}, \\
+\min_{K \in \mathbb{R}} \quad \quad & \left\| \mathbf{v}_K - \mathbf{v}^* \right\|^2 \\
+\text{subject to} \quad \quad & \mathbf{\mathcal{R}} = K \cdot \mathbf{\hat{\mathcal{R}}}, \\
 & \mathbf{z} = G\mathcal{P}\mathbf{z}, \\
 & \mathbf{v}_K = \lambda \log{\mathbf{z}}, \\
 & \mathbf{v}^* = \max_{a} \left[ \tilde{\mathbf{R}}_a + \gamma \mathbf{\tilde{P}}_a \mathbf{v}^* \right].
