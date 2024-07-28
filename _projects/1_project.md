@@ -248,15 +248,17 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 
 Z-learning significantly outperforms Q-learning by converging nearly 10 times faster, demonstrating superior efficiency and computational cost reduction. This efficiency is particularly notable in environments with high state-space complexity. However, inaccuracies in policy approximation for both methods arise from the lack of random sampling, as the tasks are designed to create goal-oriented problems, making random sampling impractical and less effective for these settings.
 
+#### Agents Solutions
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/video/lmdps/small-maze-lmdp.gif" title="Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1"%}
+        {% include video.liquid loading="eager" path="assets/video/lmdps/small-maze-lmdp.mp4" title="Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
         <div class="caption">
             Grid World Maze with Q-learning
         </div>
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/video/lmdps/multi-room-lmdp.gif" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1"%}
+        {% include video.liquid loading="eager" path="assets/video/lmdps/large-maze-lmdp.mp4" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
         <div class="caption">
             Large Grid World Maze with Q-learning
         </div>
@@ -266,13 +268,13 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/video/lmdps/hill.gif" title="Grid World Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1"%}
+        {% include video.liquid loading="eager" path="assets/video/lmdps/hill.mp4" title="Grid World Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
         <div class="caption">
             Grid World Hill-Cliff with Q-learning
         </div>
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/video/lmdps/multi-room-lmdp.gif" title="Grid World Multi-Room with Z-learning" class="img-fluid rounded z-depth-1"%}
+        {% include video.liquid loading="eager" path="assets/video/lmdps/multi-room-lmdp.mp4" title="Grid World Multi-Room with Z-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
         <div class="caption">
             Grid World Multi-Room with Z-learning
         </div>
