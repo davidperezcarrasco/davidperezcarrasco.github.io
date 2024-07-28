@@ -184,22 +184,35 @@ Binary Search (BS) can be employed to solve this minimization problem. However, 
 All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) method, with TS and BS reaching the same $$R^2$$, but a marginally better MSE for TS ($$0.1525$$ against $$0.1527$$). TE achieved an MSE of $$19.8$$, meaning our novel approach outperforms Todorov's embedding precision for a deterministic MDP by 99.23%. This difference is pronounced in larger settings, where our method still performs considerably well with an $$R^2=0.9917$$ while TE decays to $$R^2=0.1996$$, a significant difference. Furthermore, TS maintains consistent high precision while increasing the problem's size, while TE's accuracy diminishes significantly, showcasing the scalability and robustness of our method.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter-large.png" title="PDeterministic MDP Embedding Methodologies Comparison in large settings" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">
-            Deterministic MDP Embedding Approximations Comparison in large settings
-        </div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">
-            Deterministic MDP Embedding Approximations MSE Comparison by problem size
-        </div>
     </div>
 </div>
+<div class="caption text-center">
+    Deterministic MDP Embedding Approximations Comparison in large settings
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-md-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Deterministic MDP Embedding Approximations MSE Comparison by problem size
+</div>
+
 
 ## Experimentation
+### MDP Exploration Strategies
 
+<div class="row justify-content-sm-center">
+    <div class="col-md-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/q-learning-epsilon-decay.png" title="Q-learning convergence and approximation MSE by $$\epsilon$$-decay" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Q-learning convergence and approximation MSE by $$\epsilon$$-decay
+</div>
 
 
 ## References
