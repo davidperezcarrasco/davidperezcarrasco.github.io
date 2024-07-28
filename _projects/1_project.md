@@ -142,6 +142,23 @@ To apply this in the desired direction, the LMDP dynamics must be known, which d
     Embedding of deterministic MDP into LMDP implementation through SPA method
 </div>
 
+Initial intuition might suggest converting this into an iterative process. However, empirical experimentation across multiple settings revealed that the optimal approximation was consistently achieved in the very first iteration. Consequently, we hypothesize that there exists a factor $$ K $$ such that the optimal approximation of the embedded LMDP reward can be expressed as:
+
+$$
+\mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}.
+$$
+
+Where $$ \hat{\mathcal{R}}(s) $$ is the initial approximation of $$ \mathcal{R} $$. The optimal value of the factor $$ K $$ can be determined using a search algorithm, with the objective function being the Mean Squared Error (MSE) between the value function approximation of the embedded LMDP and the original MDP. This minimization problem can be expressed as follows:
+
+$$
+\begin{aligned}
+\min_{K \in \mathbb{R}} \quad & \sum_{s \in \mathcal{S}} \left( \lambda \log{z(s)} - v^*(s) \right)^2, \\
+\text{subject to} \quad & \mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}, \\
+& z(s) = e^{\mathcal{R}(s)/\lambda} \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s') \quad \text{for all } s \in \mathcal{S}, \\
+& v(s) = \max_{a} \left[ \tilde{\mathcal{R}}(s, a) + \gamma \sum_{s'} \tilde{\mathcal{P}}(s' | s, a) v^*(s') \right] \quad \text{for all } s \in \mathcal{S}.
+\end{aligned}
+$$
+
 ## References
 
 [Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, *Machine Learning and Knowledge Discovery in Databases*, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
