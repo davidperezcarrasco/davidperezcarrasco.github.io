@@ -102,7 +102,7 @@ $$
 We then find the corresponding $$\mathbf{m}$$ using this normalization condition, thereby ensuring that the solution adheres to the probabilistic constraints of the LMDP framework. The entire embedding process from [Todorov (2006)](#todorov-2006) has been implemented in a vectorized manner, significantly enhancing the efficiency and scalability of the methodology.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-9">
+    <div class="col-sm-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/stochastic-mdp-embedding.png" title="Embedding of stochastic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -134,7 +134,7 @@ $$
 To apply this in the desired direction, the LMDP dynamics must be known, which do not hold in this case as we are trying to construct the LMDP. An alternative method is to use the dynamics defined through the stochastic policy averaging (SPA) method, obtaining $$\mathcal{P}_{\textbf{u}}$$ from these dynamics, and then updating $$ \mathcal{R}$$.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-9">
+    <div class="col-sm-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-spa.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -164,7 +164,7 @@ $$
 Binary Search (BS) can be employed to solve this minimization problem. However, although $$\mathbf{v}_K$$ is a monotonically increasing function, the objective function is unimodal, making Ternary Search (TS) marginally more suitable for this problem.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-ts.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -173,7 +173,7 @@ Binary Search (BS) can be employed to solve this minimization problem. However, 
 </div>
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter.png" title="Deterministic MDP Embedding Methodologies Comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -184,7 +184,7 @@ Binary Search (BS) can be employed to solve this minimization problem. However, 
 All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) method, with TS and BS reaching the same $$R^2$$, but a marginally better MSE for TS ($$0.1525$$ against $$0.1527$$). TE achieved an MSE of $$19.8$$, meaning our novel approach outperforms Todorov's embedding precision for a deterministic MDP by $$99.23\%$$. This difference is pronounced in larger settings, where our method still performs considerably well with an $$R^2=0.9917$$ while TE decays to $$R^2=0.1996$$, a significant difference. Furthermore, TS maintains consistent high precision while increasing the problem's size, while TE's accuracy diminishes significantly, showcasing the scalability and robustness of our method.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter-large.png" title="PDeterministic MDP Embedding Methodologies Comparison in large settings" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -193,7 +193,7 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 </div>
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-12">
+    <div class="col-sm-12">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-mse" title="Deterministic MDP Embedding Methodologies MSE comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -206,7 +206,7 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 ### Exploration Strategies in Traditional MDPs
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-9">
+    <div class="col-sm-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/q-learning-epsilon-decay.png" title="Q-learning convergence and approximation MSE by exploration decay" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -218,7 +218,7 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 #### Approximation Error and Episodic Reward
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-9">
+    <div class="col-sm-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-rew-err.png" title="Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -248,6 +248,14 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 
 Z-learning significantly outperforms Q-learning by converging nearly 10 times faster, demonstrating superior efficiency and computational cost reduction. This efficiency is particularly notable in environments with high state-space complexity. However, inaccuracies in policy approximation for both methods arise from the lack of random sampling, as the tasks are designed to create goal-oriented problems, making random sampling impractical and less effective for these settings.
 
+<div class="row">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include video.liquid loading="eager" path="assets/video/lmdps/hill.gif" title="Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        <div class="caption">
+            Hill-Cliff with Q-learning
+    </div>
+</div>
+
 ## Thesis Report
 <div class="row justify-content-sm-center">
     <object data="/assets/pdf/lmdps/thesis-report.pdf" width="600" height="800" type='application/pdf'></object>
@@ -255,7 +263,7 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 
 ## Thesis presentation
 <div class="row justify-content-sm-center">
-    <object data="/assets/pdf/lmdps/thesis-presentation.pdf" width="800" height="500" type='application/pdf'></object>
+    <object data="/assets/pdf/lmdps/thesis-presentation.pdf" width="600" height="500" type='application/pdf'></object>
 </div>
 
 ## References
