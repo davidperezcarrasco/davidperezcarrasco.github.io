@@ -71,7 +71,7 @@ The iterative method to solve the final matrix equation is Power Iteration, whic
 
 ### Embedding Stochastic MDPs into LMDPs
 
-The embedding of stochastic MDPs into LMDPs involves the following system of $$\left|\mathcal{A}\right|$$ equations for a fixed state $$s$$:
+The embedding of stochastic MDPs into LMDPs involves the following system of $$ \left|\mathcal{A}\right| $$ equations for a fixed state $$ s $$:
 
 $$
 \begin{aligned}
@@ -118,11 +118,11 @@ When the MDP is deterministic, the previous embedding technique cannot be perfor
 The first alternative method involves considering a stochastic “policy" to translate the MDP to an LMDP. This method results in:
 
 $$
-\mathcal{R}(s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{R}}(s,a) \quad \text{for all } s \in \mathcal{S}
+\mathcal{R}(s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{R}}(s,a), \quad \forall s \in \mathcal{S}
 $$
 
 $$
-\mathcal{P}(s' | s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{P}}(s' | s,a) \quad \text{for all } s \in \mathcal{S}^-, s' \in \mathcal{S}
+\mathcal{P}(s' | s) \gets \frac{1}{\left|\mathcal{A}\right|}\sum_{a \in \mathcal{A}} \tilde{\mathcal{P}}(s' | s,a), \quad \forall s \in \mathcal{S}^-, s' \in \mathcal{S}
 $$
 
 However, the equivalence between the MDP and LMDP rewards must consider the Kullback-Leibler's divergence as:
@@ -145,7 +145,7 @@ To apply this in the desired direction, the LMDP dynamics must be known, which d
 Initial intuition might suggest converting this into an iterative process. However, empirical experimentation across multiple settings revealed that the optimal approximation was consistently achieved in the very first iteration. Consequently, we hypothesize that there exists a factor $$ K $$ such that the optimal approximation of the embedded LMDP reward can be expressed as:
 
 $$
-\mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s) \quad \text{for all } s \in \mathcal{S}.
+\mathcal{R}(s) = K \cdot \hat{\mathcal{R}}(s), \quad \forall s \in \mathcal{S}.
 $$
 
 Where $$ \hat{\mathcal{R}}(s) $$ is the initial approximation of $$ \mathcal{R} $$. The optimal value of the factor $$ K $$ can be determined using a search algorithm, with the objective function being the Mean Squared Error (MSE) between the value function approximation of the embedded LMDP and the original MDP. This minimization problem can be expressed as follows:
@@ -164,7 +164,7 @@ $$
 Binary Search (BS) can be employed to solve this minimization problem. However, although $$\mathbf{v}_K$$ is a monotonically increasing function, the objective function is unimodal, making Ternary Search (TS) marginally more suitable for this problem.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-10">
+    <div class="col-md-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-ts.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -172,8 +172,8 @@ Binary Search (BS) can be employed to solve this minimization problem. However, 
     Embedding of deterministic MDP into LMDP implementation through TS method
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-md-9">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-scatter.png" title="Deterministic MDP Embedding Methodologies Comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
