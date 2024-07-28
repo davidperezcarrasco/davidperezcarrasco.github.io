@@ -249,10 +249,14 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 Z-learning significantly outperforms Q-learning by converging nearly 10 times faster, demonstrating superior efficiency and computational cost reduction. This efficiency is particularly notable in environments with high state-space complexity. However, inaccuracies in policy approximation for both methods arise from the lack of random sampling, as the tasks are designed to create goal-oriented problems, making random sampling impractical and less effective for these settings.
 
 ## Thesis Report
-{% include pdf.html path="assets/pdf/lmdps/thesis-report.pdf" width="600" height="800" %}
+<div class="row justify-content-sm-center">
+    <object data="/assets/pdf/lmdps/thesis-report.pdf" width="600" height="800" type='application/pdf'></object>
+</div>
 
-## Thesis Presentation
-{% include pdf.html path="assets/pdf/lmdps/thesis-presentation.pdf" width="800" height="500" %}
+## Thesis presentation
+<div class="row justify-content-sm-center">
+    <object data="/assets/pdf/lmdps/thesis-presentation.pdf" width="800" height="500" type='application/pdf'></object>
+</div>
 
 ## References
 
