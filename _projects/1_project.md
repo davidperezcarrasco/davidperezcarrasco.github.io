@@ -2,7 +2,7 @@
 layout: page
 title: Efficient Algorithms for Linearly Solvable Markov Decision Processes
 description: Study of Linearly Solvable Markov Decision Processes, incorporating novel embedding techniques and scalable solutions.
-img: assets/img/lmdps/grid15.png
+img: assets/img/lmdps/deterministic-mdp-embedding-scatter.png
 importance: 1
 category: Research
 ---
@@ -258,7 +258,7 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
         </div>
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include video.liquid loading="eager" path="assets/video/lmdps/large-maze-lmdp.mp4" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        {% include video.liquid loading="eager" path="assets/video/lmdps/large-maze-mdp.mp4" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
         <div class="caption">
             Large Grid World Maze with Q-learning
         </div>
