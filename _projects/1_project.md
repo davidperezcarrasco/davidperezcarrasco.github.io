@@ -164,12 +164,21 @@ $$
 Binary Search (BS) can be employed to solve this minimization problem. However, although $$\mathbf{v}_K$$ is a monotonically increasing function, the objective function is unimodal, making Ternary Search (TS) marginally more suitable for this problem.
 
 <div class="row justify-content-sm-center">
-    <div class="col-md-9">
+    <div class="col-md-10">
         {% include figure.liquid loading="eager" path="assets/img/lmdps/deterministic-mdp-embedding-ts.png" title="Embedding of deterministic MDP into LMDP" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption text-center">
     Embedding of deterministic MDP into LMDP implementation through TS method
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/lmdps/deterministic-mdp-embedding-scatter.png" title="Deterministic MDP Embedding Methodologies Comparison" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Deterministic MDP Embedding Approximations Comparison
 </div>
 
 ## References
