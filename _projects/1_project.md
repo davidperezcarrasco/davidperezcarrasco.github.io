@@ -225,3 +225,25 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 <div class="caption">
     Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.
 </div>
+
+#### Value Function and Policy Approximations
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-multiroom.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-hill.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain.
+</div>
+
+Z-learning significantly outperforms Q-learning by converging nearly 10 times faster, demonstrating superior efficiency and computational cost reduction. This efficiency is particularly notable in environments with high state-space complexity. However, inaccuracies in policy approximation for both methods arise from the lack of random sampling, as the tasks are designed to create goal-oriented problems, making random sampling impractical and less effective for these settings.
