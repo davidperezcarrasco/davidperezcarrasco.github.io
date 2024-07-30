@@ -201,4 +201,3 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 </div>
 
 ## Experimentation
-### Exploration Strategies in Traditional MDPs
