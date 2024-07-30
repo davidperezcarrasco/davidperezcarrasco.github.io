@@ -294,4 +294,4 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 
 ## References
 
-[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, Machine Learning and Knowledge Discovery in Databases, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
+[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, * Machine Learning and Knowledge Discovery in Databases *, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
