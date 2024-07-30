@@ -294,18 +294,18 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 
 ## References
 
-[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, $$ \textit{Machine Learning and Knowledge Discovery in Databases}$$, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
+[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014). Policy search for path integral control. In Calders, T., Esposito, F., Hüllermeier, E., and Meo, R., editors, &#42;Machine Learning and Knowledge Discovery in Databases&#42;, pages 482–497, Berlin, Heidelberg. Springer Berlin Heidelberg.
 
 [Gómez et al., 2020] Gómez, V., Thijssen, S., Symington, A., Hailes, S., and Kappen, H. J. (2020). Real-time stochastic optimal control for multi-agent quadrotor systems.
 
-[Infante et al., 2022] Infante, G., Jonsson, A., and Gómez, V. (2022). Globally optimal hierarchical reinforcement learning for linearly-solvable markov decision processes. *Proceedings of the AAAI Conference on Artificial Intelligence*, 36(6):6970–6977.
+[Infante et al., 2022] Infante, G., Jonsson, A., and Gómez, V. (2022). Globally optimal hierarchical reinforcement learning for linearly-solvable markov decision processes. &#42;Proceedings of the AAAI Conference on Artificial Intelligence&#42;, 36(6):6970–6977.
 
-[Jonsson and Gómez, 2016] Jonsson, A. and Gómez, V. (2016). Hierarchical linearly-solvable markov decision problems. In *Proceedings of the 26th International Conference on Automated Planning and Scheduling (ICAPS)*.
+[Jonsson and Gómez, 2016] Jonsson, A. and Gómez, V. (2016). Hierarchical linearly-solvable markov decision problems. In &#42;Proceedings of the 26th International Conference on Automated Planning and Scheduling (ICAPS)&#42;.
 
-[Molina et al., 2023] Molina, G. I., Jonsson, A., and Gómez, V. (2023). Optimal hierarchical average-reward linearly-solvable markov decision processes. In *Sixteenth European Workshop on Reinforcement Learning*.
+[Molina et al., 2023] Molina, G. I., Jonsson, A., and Gómez, V. (2023). Optimal hierarchical average-reward linearly-solvable markov decision processes. In &#42;Sixteenth European Workshop on Reinforcement Learning&#42;.
 
-[Sutton and Barto, 2018] Sutton, R. S. and Barto, A. G. (2018). *Reinforcement learning: an introduction*. Adaptive computation and machine learning series. The MIT Press, Cambridge, Massachusetts, second edition.
+[Sutton and Barto, 2018] Sutton, R. S. and Barto, A. G. (2018). &#42;Reinforcement learning: an introduction&#42;. Adaptive computation and machine learning series. The MIT Press, Cambridge, Massachusetts, second edition.
 
-<a id="todorov-2006"></a>[Todorov, 2006] Todorov, E. (2006). Linearly-solvable markov decision problems. In Schölkopf, B., Platt, J., and Hoffman, T., editors, *Advances in Neural Information Processing Systems*, volume 19. MIT Press. 
+<a id="todorov-2006"></a>[Todorov, 2006] Todorov, E. (2006). Linearly-solvable markov decision problems. In Schölkopf, B., Platt, J., and Hoffman, T., editors, &#42;Advances in Neural Information Processing Systems&#42;, volume 19. MIT Press. 
 
-[Todorov, 2009] Todorov, E. (2009). Efficient computation of optimal actions. *Proceedings of the National Academy of Sciences of the United States of America*, 106:11478–83.
+[Todorov, 2009] Todorov, E. (2009). Efficient computation of optimal actions. &#42;Proceedings of the National Academy of Sciences of the United States of America&#42;, 106:11478–83.
