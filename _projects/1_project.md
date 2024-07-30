@@ -21,3 +21,5 @@ LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \
 - $$\mathcal{P}: \mathcal{S}^- \to \Delta(\mathcal{S})$$: Passive dynamics.
 - $$\mathcal{R}: \mathcal{S} \to \mathbb{R}$$: Reward function.
 - $$\lambda$$: Temperature parameter.
+
+The optimality Bellman equation for LMDPs is:
