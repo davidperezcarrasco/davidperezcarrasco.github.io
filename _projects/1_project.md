@@ -293,3 +293,5 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
 </div>
 
 ## References
+
+[Gómez et al., 2014] Gómez, V., Kappen, H. J., Peters, J., and Neumann, G. (2014).
