@@ -35,17 +35,3 @@ Using this exponential transformation, the Bellman equation can be reformulated 
 $$
 z(s) = e^{\mathcal{R}(s)/\lambda}  \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s')
 $$
-
-In matrix form, this is expressed as:
-
-$$
-\mathbf{z} = G\mathcal{P}\mathbf{z}
-$$
-
-where the vector $$\mathbf{z}$$ consists of elements $$z(s)$$, and the diagonal matrix $$G$$ has terms $$e^{\mathcal{R}(s)/\lambda}$$ on its main diagonal.
-
-The optimally controlled transition probabilities can be obtained using the following equation:
-
-$$
-\mathcal{P}_{\mathbf{u}^*}(s' | s) = \frac{\mathcal{P}(s' | s) z(s')}{\sum_{s'' \in \mathcal{S}} \mathcal{P}(s'' | s) z(s'')}
-$$
