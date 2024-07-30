@@ -29,5 +29,3 @@ $$
 $$
 
 where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ with  $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. 
-
-Using this exponential transformation, the Bellman equation can be reformulated as:
