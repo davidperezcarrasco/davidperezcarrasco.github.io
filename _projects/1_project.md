@@ -114,7 +114,6 @@ We then find the corresponding $$\mathbf{m}$$ using this normalization condition
 
 When the MDP is deterministic, the previous embedding technique cannot be performed, as there is no entropy within the transition probability distribution. This makes the exact construction of an LMDP infeasible. Todorov's approach can still be used by removing the entropy factor and scaling out the rewards when necessary, but it leads to suboptimal approximations. Therefore, an alternative methodology has been proposed in this work, presenting a novel approach for accurately and efficiently constructing the most precise possible LMDP from a deterministic MDP, outperforming previous baselines in embedding precision and robustness.
 
-
 The first alternative method involves considering a stochastic “policy" to translate the MDP to an LMDP. This method results in:
 
 $$
@@ -201,7 +200,6 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
     Deterministic MDP Embedding Approximations MSE Comparison by problem size
 </div>
 
-
 ## Experimentation
 ### Exploration Strategies in Traditional MDPs
 
@@ -265,7 +263,6 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
     </div>
 </div>
 
-
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include video.liquid loading="eager" path="assets/video/lmdps/hill.mp4" title="Grid World Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
@@ -280,7 +277,6 @@ Z-learning significantly outperforms Q-learning by converging nearly 10 times fa
         </div>
     </div>
 </div>
-
 
 ## Thesis Report
 <div class="row justify-content-sm-center">
