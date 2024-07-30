@@ -202,12 +202,3 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 
 ## Experimentation
 ### Exploration Strategies in Traditional MDPs
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-9">
-        {% include figure.liquid loading="eager" path="assets/img/lmdps/q-learning-epsilon-decay.png" title="Q-learning convergence and approximation MSE by exploration decay" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Q-learning convergence and approximation MSE by exploration decay
-</div>
