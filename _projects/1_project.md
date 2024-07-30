@@ -212,3 +212,16 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 <div class="caption">
     Q-learning convergence and approximation MSE by exploration decay
 </div>
+
+### Comparative Analysis of Z-learning and Q-learning
+
+#### Approximation Error and Episodic Reward
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-rew-err.png" title="Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.
+</div>
