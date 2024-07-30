@@ -23,3 +23,29 @@ LMDPs are defined as $$\mathcal{L} = (\mathcal{S}, \mathcal{S}^-, \mathcal{T}, \
 - $$\lambda$$: Temperature parameter.
 
 The optimality Bellman equation for LMDPs is:
+
+$$
+\frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}_{z}(s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}_{z}(s)}\right) \quad \forall s \in \mathcal{S}^-
+$$
+
+where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ with  $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$. 
+
+Using this exponential transformation, the Bellman equation can be reformulated as:
+
+$$
+z(s) = e^{\mathcal{R}(s)/\lambda}  \sum_{s' \in \mathcal{S}} \mathcal{P}(s' | s) z(s')
+$$
+
+In matrix form, this is expressed as:
+
+$$
+\mathbf{z} = G\mathcal{P}\mathbf{z}
+$$
+
+where the vector $$\mathbf{z}$$ consists of elements $$z(s)$$, and the diagonal matrix $$G$$ has terms $$e^{\mathcal{R}(s)/\lambda}$$ on its main diagonal.
+
+The optimally controlled transition probabilities can be obtained using the following equation:
+
+$$
+\mathcal{P}_{\mathbf{u}^*}(s' | s) = \frac{\mathcal{P}(s' | s) z(s')}{\sum_{s'' \in \mathcal{S}} \mathcal{P}(s'' | s) z(s'')}
+$$
