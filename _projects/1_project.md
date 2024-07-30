@@ -199,3 +199,81 @@ All TS, BS and SPA methods outperformed the baseline's Todorov's Embedding (TE) 
 <div class="caption">
     Deterministic MDP Embedding Approximations MSE Comparison by problem size
 </div>
+
+## Experimentation
+### Exploration Strategies in Traditional MDPs
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/q-learning-epsilon-decay.png" title="Q-learning convergence and approximation MSE by exploration decay" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Q-learning convergence and approximation MSE by exploration decay
+</div>
+
+### Comparative Analysis of Z-learning and Q-learning
+#### Approximation Error and Episodic Reward
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-9">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-rew-err.png" title="Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Comparison of approximation error (top) and episodic reward (bottom) between Q-learning and Z-learning.
+</div>
+
+#### Value Function and Policy Approximations
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-multiroom.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Value function and policy approximations for Q-learning and Z-learning in a Minigrid multi-room domain
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12">
+        {% include figure.liquid loading="eager" path="assets/img/lmdps/zvsq-val-hill.png" title="Value function and policy approximations for Q-learning and Z-learning" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Value function and policy approximations for Q-learning and Z-learning in a Minigrid hill-cliff domain.
+</div>
+
+Z-learning significantly outperforms Q-learning by converging nearly 10 times faster, demonstrating superior efficiency and computational cost reduction. This efficiency is particularly notable in environments with high state-space complexity. However, inaccuracies in policy approximation for both methods arise from the lack of random sampling, as the tasks are designed to create goal-oriented problems, making random sampling impractical and less effective for these settings.
+
+#### Agents Solutions
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include video.liquid loading="eager" path="assets/video/lmdps/small-maze-lmdp.mp4" title="Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        <div class="caption">
+            Grid World Maze with Q-learning
+        </div>
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include video.liquid loading="eager" path="assets/video/lmdps/large-maze-mdp.mp4" title="Large Grid World Maze with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        <div class="caption">
+            Large Grid World Maze with Q-learning
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include video.liquid loading="eager" path="assets/video/lmdps/hill.mp4" title="Grid World Hill-Cliff with Q-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        <div class="caption">
+            Grid World Hill-Cliff with Q-learning
+        </div>
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include video.liquid loading="eager" path="assets/video/lmdps/multi-room-lmdp.mp4" title="Grid World Multi-Room with Z-learning" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+        <div class="caption">
+            Grid World Multi-Room with Z-learning
+        </div>
+    </div>
+</div>
