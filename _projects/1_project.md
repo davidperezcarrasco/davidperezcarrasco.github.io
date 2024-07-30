@@ -28,4 +28,4 @@ $$
 \frac{1}{\lambda} v(s) = \frac{1}{\lambda} \mathcal{R}(s) + \log{\mathcal{G}_{z}(s)} - \min_{\mathbf{u} \in \mathcal{U}(s)} KL \left( \mathcal{P}_{\mathbf{u}}( \cdot | s) \bigg\Vert \frac{\mathcal{P}(\cdot | s) z(\cdot)}{\mathcal{G}_{z}(s)}\right) \quad \forall s \in \mathcal{S}^-
 $$
 
-where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$
+where $$ z(s) = e^{\frac{v(s)}{\lambda}} $$ and $$\mathcal{G}_{z}(s) = \sum_{s' \in \mathcal{S}} \mathcal{P}(s' \mid s) z(s')$$ with  $$v(s) = \mathcal{R}(s) \quad \forall s \in \mathcal{T}$$.
