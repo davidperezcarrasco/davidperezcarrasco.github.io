@@ -13,6 +13,12 @@ category: Machine Learning
 
 The core of the sentiment analysis component is based on the BERT large uncased emotions model. Fine-tuning this model involved extensive parameter tuning to optimize the precision, recall, and F1 score. Various configurations of maximum sequence length, batch size, learning rate, and epochs were tested to identify the best performing setup. The following table summarizes the results of tuning different hyperparameters for the BERT text classification model. The evaluation metrics include precision, recall, and F1 score for each configuration:
 
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
+
 | Max Seq Size | Batch Size | Learning Rate | Epochs | Precision | Recall | F1   |
 |--------------|------------|---------------|--------|-----------|--------|------|
 | 128          | 32         | 2e-5          | 3      | 0.60      | 0.40   | 0.46 |
@@ -21,6 +27,4 @@ The core of the sentiment analysis component is based on the BERT large uncased 
 | 192          | 32         | 4e-5          | 3      | 0.55      | 0.43   | 0.47 |
 | 64           | 64         | 2e-5          | 5      | 0.56      | 0.42   | 0.47 |
 
-The optimal configuration, highlighted by a combination of high precision, recall, and F1 score, was used to fine-tune the BERT model, enhancing its performance for the sentiment analysis task. The optimal threshold for the classes labeling was between 0.2 and 0.3, as highlighted in the [report]](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers/blob/main/NLP_Report.pdf).
-
-#TODO: unmute videos from data analytics, change links from data science projects, check projects interface, finish nlp and cv
+The optimal configuration, highlighted by a combination of high precision, recall, and F1 score, was used to fine-tune the BERT model, enhancing its performance for the sentiment analysis task. The optimal threshold for the classes labeling was between 0.2 and 0.3, as highlighted in the [report](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers/blob/main/NLP_Report.pdf).
