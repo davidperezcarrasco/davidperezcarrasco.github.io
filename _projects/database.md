@@ -3,7 +3,7 @@ layout: page
 title: Football Data Management with Oracle and SQL
 description: Oracle-based football database with advanced SQL for CRUD operations and complex data aggregations.
 img: assets/img/db-er.png
-importance: 5
+importance: 6
 category: Data Science
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Generative Adversarial Networks for Image Super-Resolution
 description: GAN-based Image Super-Resolution for enhanced detail recovery, achieving  4x upscaling of image resolution while preserving fine details.
 img: assets/img/more_results.jpg
-importance: 3
+importance: 4
 category: Machine Learning
 ---
 

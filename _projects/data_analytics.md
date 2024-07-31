@@ -3,7 +3,7 @@ layout: page
 title: Data Analytics Web App for Software Dev Salary Predictions
 description: Interactive platform leveraging data analytics and machine learning to predict software developers' salaries.
 img: assets/img/dev-map
-importance: 4
+importance: 5
 category: Data Science
 ---
 

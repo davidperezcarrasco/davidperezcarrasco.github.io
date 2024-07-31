@@ -3,7 +3,7 @@ layout: page
 title: Data Visualization of Spotify Streaming Trends with Tableau
 description: Interactive Tableau dashboards showcasing Spotify streaming data, spotlighting artist co-occurrence networks and time series for trend spotting.
 img: assets/img/tb-streams.png
-importance: 6
+importance: 7
 category: Data Science
 ---
 
