@@ -46,17 +46,25 @@ For the summary generation component, we used a large language model (LLM) to ge
 The zero-shot prompt used was:
 
 `Summarize shortly the comments provided above.`
+
 `Describe general emotions.`
 
 The few-shot prompt was more structured:
 
 ● `You are a summarizer bot.`
+
 ● `Your task is to given a group of comments you should return a general summary of the group of comments.`
+
 ● `You must not summarize each comment individually, you should summarize them as a whole.`
+
 ● `Describe general emotions.`
+
 ● `Do not provide additional explanations or notes, just the summary.`
+
 ● `Do not use more than 60 words.`
+
 ● `The group of comments is inside <<<>>>.`
+
 ● `Here are some examples: ...`
 
 We experimented with two large language models: [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b/) and [Mixtral 8x7B](https://mistral.ai/news/mixtral-of-experts/). The Mixtral 8x7B model, which employs a sparse mixture of experts (MoEs) architecture, combines outputs from eight different experts efficiently, making both training and inference highly effective. We observed that Mixtral 8x7B outperformed Mistral 7B in the zero-shot prompt scenario, likely due to the greater flexibility and adaptability required in zero-shot tasks. However, with few-shot prompts, the additional examples provided sufficient orientation, leading to similar performance levels for both models.

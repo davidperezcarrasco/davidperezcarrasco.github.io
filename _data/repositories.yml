@@ -2,13 +2,15 @@ github_users:
   - davidperezcarrasco
 
 github_repos:
-  - davidperezcarrasco/Novel-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes
+  - davidperezcarrasco/Efficient-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes
   - davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model
+  - davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers 
   - davidperezcarrasco/SRGAN-for-Image-Super-Resolution
+  - davidperezcarrasco/Information-Retrieval-Search-Engine-with-Web-Analytics
+  - davidperezcarrasco/Spark-for-real-time-Big-Data-with-AWS
   - davidperezcarrasco/Deep-Learning-for-Cryptoanalysis
   - davidperezcarrasco/Machine-Learning-for-Customer-Segmentation
   - davidperezcarrasco/Mobile-Net-CNN-for-SVHN
-  - davidperezcarrasco/Information-Retrieval-Search-Engine-with-Web-Analytics
-  - davidperezcarrasco/Spark-for-real-time-Big-Data-with-AWS
   - davidperezcarrasco/Football-Data-App-with-Oracle-SQL-Java-and-PHP
   - davidperezcarrasco/Car-Price-Prediction-Web-App-with-XAI
+  - davidperezcarrasco/Data-Visualization-of-Spotify-Streaming-Trends-with-Tableau
