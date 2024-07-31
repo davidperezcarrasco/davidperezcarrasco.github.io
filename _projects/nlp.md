@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sentiment Analysis and Contextual Retrieval with LLMs and Transformers
-description: Sentiment analysis and contextual retrieval using transformer models, featuring an interactive web interface for input analysis and comment retrieval.
+description: Sentiment analysis and contextual retrieval leveraging BERT, Hugging Face transformers, fine-tuning techniques and ASR.
 img: assets/img/nlp/wallpaper.png
 importance: 3
 category: Machine Learning
@@ -12,6 +12,11 @@ category: Machine Learning
 ## BERT's Text Classification Model Fine Tuning
 
 The core of the sentiment analysis component is based on the BERT large uncased emotions model. Fine-tuning this model involved extensive parameter tuning to optimize the precision, recall, and F1 score. Various configurations of maximum sequence length, batch size, learning rate, and epochs were tested to identify the best performing setup. The following table summarizes the results of tuning different hyperparameters for the BERT text classification model. The evaluation metrics include precision, recall, and F1 score for each configuration:
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 | Month    | Savings |
 | -------- | ------- |
