@@ -86,7 +86,6 @@ Our project is complemented by a comprehensive web application designed for user
 ### Paper
 <object data="/assets/pdf/anomaly-detection/paper.pdf" width="600" height="800" type='application/pdf'></object>
 
-
 ### References
 
 Guha, S., Mishra, N., Roy, G., & Schrijvers, O. (2016, June). [Robust random cut forest based anomaly detection on streams](https://proceedings.mlr.press/v48/guha16.html). In International conference on machine learning (pp. 2712-2721). PMLR.
