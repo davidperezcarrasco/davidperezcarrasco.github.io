@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Sentiment Analysis and Contextual Retrieval with LLMs and Transformers
-description: Sentiment analysis and contextual retrieval leveraging BERT, Hugging Face transformers, Mistral LLMs and ASR.
+title: Sentiment Analysis and RAG with LLMs and Transformers
+description: Sentiment analysis and Retrieval Augmented Generation leveraging BERT, Hugging Face transformers, Mistral LLMs and ASR.
 img: assets/img/nlp/wallpaper.png
 importance: 3
 category: Machine Learning
 ---
 
-[This project](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers) focuses on implementing a comprehensive Natural Language Processing (NLP) pipeline for sentiment analysis and contextual comment retrieval using state-of-the-art transformer models. The system accepts text or audio input, converts the audio to text, predicts sentiment labels with a fine-tuned BERT text classification model, retrieves similar comments using cosine similarity from Hugging Face encodings, and generates summaries using a Mistral Face large language model (LLM). The integration of these components showcases advanced NLP techniques, including sentiment analysis, contextual embeddings, and prompt engineering, within a seamless and interactive web interface.
+[This project](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-RAG-with-LLMs-and-Transformers) focuses on implementing a comprehensive Natural Language Processing (NLP) pipeline for sentiment analysis and etrieval-Augmented Generation (RAG) using state-of-the-art transformer models. The system accepts text or audio input, converts the audio to text, predicts sentiment labels with a fine-tuned BERT text classification model, retrieves similar comments using cosine similarity from Hugging Face encodings, and generates summaries using a Mistral Face large language model (LLM). The integration of these components showcases advanced NLP techniques, including sentiment analysis, contextual embeddings, and prompt engineering, within a seamless and interactive web interface.
 
 ## Sentiment Analysis with BERT's Fine Tuning
 
@@ -22,11 +22,11 @@ The core of the sentiment analysis component is based on the BERT large uncased 
     Hyperparameter Tuning for BERT Text Classification Model
 </div>
 
-The optimal configuration, highlighted by a combination of high precision, recall, and F1 score, was used to fine-tune the BERT model, enhancing its performance for the sentiment analysis task. The optimal threshold for the classes labeling was between 0.2 and 0.3, as highlighted in the [report](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers/blob/main/NLP_Report.pdf).
+The optimal configuration, highlighted by a combination of high precision, recall, and F1 score, was used to fine-tune the BERT model, enhancing its performance for the sentiment analysis task. The optimal threshold for the classes labeling was between 0.2 and 0.3, as highlighted in the [report](https://github.com/davidperezcarrasco/Sentiment-Analysis-and-RAG-with-LLMs-and-Transformers/blob/main/NLP_Report.pdf).
 
-## Retrieval-Augmented Generation
+## Retrieval-Augmented Generation (RAG)
 
-The retrieval-augmented generation process in this project involves using a sentence transformer model from Hugging Face, specifically the [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), to encode the comments. The encoded comments are then compared using cosine similarity to retrieve the most similar ones. The optimal threshold for cosine similarity was found to be around 0.5. 
+The Retrieval-Augmented Generation process in this project involves using a sentence transformer model from Hugging Face, specifically the [`all-MiniLM-L6-v2`](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), to encode the comments. The encoded comments are then compared using cosine similarity to retrieve the most similar ones. The optimal threshold for cosine similarity was found to be around 0.5. 
 
 For complex or lengthy input comments, where the likelihood of finding an exact match in the dataset is lower, a lower threshold can be employed to ensure some relevant outputs are retrieved. Conversely, for very short and straightforward sentences, a higher threshold can be beneficial to filter out only those comments that are strictly similar to the input, thus maintaining high precision. This dynamic adjustment of the threshold based on the input characteristics enhances the robustness and flexibility of the retrieval-augmented generation process.
 
