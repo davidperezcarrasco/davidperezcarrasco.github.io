@@ -4,11 +4,11 @@ github_users:
 github_repos:
   - davidperezcarrasco/Efficient-Algorithms-for-Linearly-Solvable-Markov-Decision-Processes
   - davidperezcarrasco/Anomaly-Detection-Hierarchical-Deep-Learning-Model
-  - davidperezcarrasco/Sentiment-Analysis-and-Contextual-Retrieval-with-LLMs-and-Transformers
+  - davidperezcarrasco/Sentiment-Analysis-and-RAG-with-LLMs-and-Transformers
   - davidperezcarrasco/SRGAN-for-Image-Super-Resolution
+  - davidperezcarrasco/Document-Categorization-with-Deep-Learning
   - davidperezcarrasco/Information-Retrieval-Search-Engine-with-Web-Analytics
   - davidperezcarrasco/Spark-for-real-time-Big-Data-with-AWS
-  - davidperezcarrasco/Deep-Learning-for-Cryptoanalysis
   - davidperezcarrasco/Machine-Learning-for-Customer-Segmentation
   - davidperezcarrasco/Mobile-Net-CNN-for-SVHN
   - davidperezcarrasco/Football-Data-App-with-Oracle-SQL-Java-and-PHP
