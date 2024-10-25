@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper titled
+Our paper titled * Unsupervised Anomaly Detection in Urban Water Networks Using a Hierarchical Deep Learning Model *
